@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D1490BA1377E4F400A8FE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1490B91377E4F400A8FE68 /* UIKit.framework */; };
+		3D1490BC1377E4F400A8FE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1490BB1377E4F400A8FE68 /* Foundation.framework */; };
+		3D1490BE1377E4F400A8FE68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1490BD1377E4F400A8FE68 /* CoreGraphics.framework */; };
+		3D1490C41377E4F400A8FE68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490C21377E4F400A8FE68 /* InfoPlist.strings */; };
+		3D1490C71377E4F400A8FE68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1490C61377E4F400A8FE68 /* main.m */; };
+		3D1490CA1377E4F400A8FE68 /* ComicViewerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1490C91377E4F400A8FE68 /* ComicViewerAppDelegate.m */; };
+		3D1490CD1377E4F400A8FE68 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490CB1377E4F400A8FE68 /* MainWindow.xib */; };
+		3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */; };
+		3D1490D31377E4F400A8FE68 /* ComicViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D1490B51377E4F400A8FE68 /* ComicViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1490B91377E4F400A8FE68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D1490BB1377E4F400A8FE68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D1490BD1377E4F400A8FE68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D1490C11377E4F400A8FE68 /* ComicViewer-Info.plist */ = {isa = PBXFileReference; path = "ComicViewer-Info.plist"; sourceTree = "<group>"; };
+		3D1490C31377E4F400A8FE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D1490C51377E4F400A8FE68 /* ComicViewer-Prefix.pch */ = {isa = PBXFileReference; path = "ComicViewer-Prefix.pch"; sourceTree = "<group>"; };
+		3D1490C61377E4F400A8FE68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D1490C81377E4F400A8FE68 /* ComicViewerAppDelegate.h */ = {isa = PBXFileReference; path = ComicViewerAppDelegate.h; sourceTree = "<group>"; };
+		3D1490C91377E4F400A8FE68 /* ComicViewerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicViewerAppDelegate.m; sourceTree = "<group>"; };
+		3D1490CC1377E4F400A8FE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3D1490CE1377E4F400A8FE68 /* ComicViewerViewController.h */ = {isa = PBXFileReference; path = ComicViewerViewController.h; sourceTree = "<group>"; };
+		3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicViewerViewController.m; sourceTree = "<group>"; };
+		3D1490D21377E4F400A8FE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ComicViewerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D1490B21377E4F400A8FE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1490BA1377E4F400A8FE68 /* UIKit.framework in Frameworks */,
+				3D1490BC1377E4F400A8FE68 /* Foundation.framework in Frameworks */,
+				3D1490BE1377E4F400A8FE68 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D1490AA1377E4F300A8FE68 = {
+			isa = PBXGroup;
+			children = (
+				3D1490BF1377E4F400A8FE68 /* ComicViewer */,
+				3D1490B81377E4F400A8FE68 /* Frameworks */,
+				3D1490B61377E4F400A8FE68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D1490B61377E4F400A8FE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D1490B51377E4F400A8FE68 /* ComicViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D1490B81377E4F400A8FE68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D1490B91377E4F400A8FE68 /* UIKit.framework */,
+				3D1490BB1377E4F400A8FE68 /* Foundation.framework */,
+				3D1490BD1377E4F400A8FE68 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D1490BF1377E4F400A8FE68 /* ComicViewer */ = {
+			isa = PBXGroup;
+			children = (
+				3D1490C81377E4F400A8FE68 /* ComicViewerAppDelegate.h */,
+				3D1490C91377E4F400A8FE68 /* ComicViewerAppDelegate.m */,
+				3D1490CB1377E4F400A8FE68 /* MainWindow.xib */,
+				3D1490CE1377E4F400A8FE68 /* ComicViewerViewController.h */,
+				3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */,
+				3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */,
+				3D1490C01377E4F400A8FE68 /* Supporting Files */,
+			);
+			path = ComicViewer;
+			sourceTree = "<group>";
+		};
+		3D1490C01377E4F400A8FE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D1490C11377E4F400A8FE68 /* ComicViewer-Info.plist */,
+				3D1490C21377E4F400A8FE68 /* InfoPlist.strings */,
+				3D1490C51377E4F400A8FE68 /* ComicViewer-Prefix.pch */,
+				3D1490C61377E4F400A8FE68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D1490B41377E4F400A8FE68 /* ComicViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1490D61377E4F400A8FE68 /* Build configuration list for PBXNativeTarget "ComicViewer" */;
+			buildPhases = (
+				3D1490B11377E4F400A8FE68 /* Sources */,
+				3D1490B21377E4F400A8FE68 /* Frameworks */,
+				3D1490B31377E4F400A8FE68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComicViewer;
+			productName = ComicViewer;
+			productReference = 3D1490B51377E4F400A8FE68 /* ComicViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D1490AC1377E4F300A8FE68 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3D1490AF1377E4F300A8FE68 /* Build configuration list for PBXProject "ComicViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D1490AA1377E4F300A8FE68;
+			productRefGroup = 3D1490B61377E4F400A8FE68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D1490B41377E4F400A8FE68 /* ComicViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D1490B31377E4F400A8FE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1490C41377E4F400A8FE68 /* InfoPlist.strings in Resources */,
+				3D1490CD1377E4F400A8FE68 /* MainWindow.xib in Resources */,
+				3D1490D31377E4F400A8FE68 /* ComicViewerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D1490B11377E4F400A8FE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1490C71377E4F400A8FE68 /* main.m in Sources */,
+				3D1490CA1377E4F400A8FE68 /* ComicViewerAppDelegate.m in Sources */,
+				3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D1490C21377E4F400A8FE68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1490C31377E4F400A8FE68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D1490CB1377E4F400A8FE68 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1490CC1377E4F400A8FE68 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1490D21377E4F400A8FE68 /* en */,
+			);
+			name = ComicViewerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D1490D41377E4F400A8FE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D1490D51377E4F400A8FE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3D1490D71377E4F400A8FE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ComicViewer/ComicViewer-Prefix.pch";
+				INFOPLIST_FILE = "ComicViewer/ComicViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D1490D81377E4F400A8FE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ComicViewer/ComicViewer-Prefix.pch";
+				INFOPLIST_FILE = "ComicViewer/ComicViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D1490AF1377E4F300A8FE68 /* Build configuration list for PBXProject "ComicViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1490D41377E4F400A8FE68 /* Debug */,
+				3D1490D51377E4F400A8FE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1490D61377E4F400A8FE68 /* Build configuration list for PBXNativeTarget "ComicViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1490D71377E4F400A8FE68 /* Debug */,
+				3D1490D81377E4F400A8FE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D1490AC1377E4F300A8FE68 /* Project object */;
+}
