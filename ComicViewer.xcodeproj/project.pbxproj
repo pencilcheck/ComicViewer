@@ -22,6 +22,7 @@
 		3D1491DE1377E71100A8FE68 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D1491DB1377E71100A8FE68 /* 3.jpg */; };
 		3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */; };
 		3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */; };
+		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		3D4A89A61377F968006366A8 /* PicturesViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicturesViewerViewController.h; sourceTree = "<group>"; };
 		3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicturesViewerViewController.m; sourceTree = "<group>"; };
 		3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesViewerViewController.xib; sourceTree = "<group>"; };
+		42FE837B13A3542C0067CED1 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		42FE837C13A3542C0067CED1 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		3D1490BF1377E4F400A8FE68 /* ComicViewer */ = {
 			isa = PBXGroup;
 			children = (
+				42FE837B13A3542C0067CED1 /* MyScrollView.h */,
+				42FE837C13A3542C0067CED1 /* MyScrollView.m */,
 				3D1490C81377E4F400A8FE68 /* ComicViewerAppDelegate.h */,
 				3D1490C91377E4F400A8FE68 /* ComicViewerAppDelegate.m */,
 				3D1490CB1377E4F400A8FE68 /* MainWindow.xib */,
@@ -206,6 +211,7 @@
 				3D1490CA1377E4F400A8FE68 /* ComicViewerAppDelegate.m in Sources */,
 				3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */,
 				3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */,
+				42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

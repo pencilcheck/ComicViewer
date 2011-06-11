@@ -58,7 +58,19 @@
 
 - (void)toggleMode:(UITapGestureRecognizer *)sender
 {
-    
+//	NSArray* array = [[NSArray alloc] initWithObjects:
+//                      [[NSArray alloc] initWithObjects:<#(id)firstObj#>:[UIImage imageNamed:@"1.jpg"]], 
+//                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]], 
+//                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3.jpg"]], nil];
+//    pictures = [[NSMutableArray alloc] initWithArray:array];
+	
+	if (viewerMode == ViewerModePageView) {
+		CGPoint tapPointInImage = [sender locationInView:sender.view];
+		NSLog (@"X: %g  Y: %g", tapPointInImage.x, tapPointInImage.y);
+	}
+	if (viewerMode == ViewerModePanelView) {
+		
+	}
 }
 
 - (void)panPicture:(UIPanGestureRecognizer *)sender
@@ -203,6 +215,7 @@
     [swipeRightGesture release];
     [doubleTapGesture release];
     
+	viewerMode = ViewerModePageView;
     // init pictures
     if ( [pictures count] > 0 ) {
         previousImage = NULL;

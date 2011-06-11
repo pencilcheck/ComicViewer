@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
+typedef enum {
+	ViewerModePageView,
+	ViewerModePanelView
+} ViewerMode;
+
+
 @interface PicturesViewerViewController : UIViewController {
     // datasource
     NSMutableArray* pictures;
@@ -24,6 +30,9 @@
     UIImageView* previousImage;
     UIImageView* currentImage;
     UIImageView* nextImage;
+
+	// State Variable
+	ViewerMode viewerMode;
 }
 
 @end
