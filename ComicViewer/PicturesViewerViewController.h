@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "MyScrollView.h"
 
 
 typedef enum {
@@ -27,9 +28,9 @@ typedef enum {
     UITapGestureRecognizer* doubleTapGesture;
     
     // UI
-    UIImageView* previousImage;
-    UIImageView* currentImage;
-    UIImageView* nextImage;
+    MyScrollView* previousImage;
+    MyScrollView* currentImage;
+    MyScrollView* nextImage;
 
 	// State Variable
 	ViewerMode viewerMode;

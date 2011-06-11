@@ -56,7 +56,9 @@
     // Create a new PicturesViewController and push it
     
     //TODO: need to pass the index of the comic or the array
-    picturesViewer = [[PicturesViewerViewController alloc] init];
+	
+	NSLog(@"TableView Width: %g, Height: %g", self.tableView.frame.size.width, self.tableView.frame.size.height);
+    picturesViewer = [[PicturesViewerViewController alloc] initWithFrame:self.tableView.frame];
     
     [self.navigationController pushViewController:picturesViewer animated:YES];
 }
@@ -92,7 +94,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 @end
