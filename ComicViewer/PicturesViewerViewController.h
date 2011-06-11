@@ -18,9 +18,9 @@ typedef enum {
 typedef enum {
     scrollViewIndex,
     panelRectsIndex
-} getPair;
+} indexPair;
 
-@interface PicturesViewerViewController : UIViewController {
+@interface PicturesViewerViewController : UIViewController <UINavigationControllerDelegate> {
     // datasource
     NSMutableArray* pictures;
     
@@ -30,6 +30,7 @@ typedef enum {
     UISwipeGestureRecognizer* swipeRightGesture;
     UIRotationGestureRecognizer* rotateGesture;
     UITapGestureRecognizer* doubleTapGesture;
+    UITapGestureRecognizer* tapGesture;
     
     // UI
     MyScrollView* previousImage;

@@ -34,7 +34,8 @@
         
         [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];
     }
-    /*
+    
+    /* older implementation
     NSArray* array = [[NSArray alloc] initWithObjects:
                       [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"1.jpg"]], 
                       [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"2.jpg"]], 
@@ -44,29 +45,43 @@
     
     // init gestures
     panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panPicture:)];
+    
     swipeLeftGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipePicture:)];
     [swipeLeftGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+    
     swipeRightGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipePicture:)];
     [swipeRightGesture setDirection:UISwipeGestureRecognizerDirectionRight];
+    
     doubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleMode:)];
     doubleTapGesture.numberOfTapsRequired = 2;
+    
+    tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleToolbars:)];
+    tapGesture.numberOfTapsRequired = 1;
+    [tapGesture requireGestureRecognizerToFail: doubleTapGesture];
+    
+    //tapGestureRecognizer.delegate = self;
     
     // attach gestures
     //[self.view addGestureRecognizer:panGesture];
     [self.view addGestureRecognizer:swipeLeftGesture];
     [self.view addGestureRecognizer:swipeRightGesture];
     [self.view addGestureRecognizer:doubleTapGesture];
+    [self.view addGestureRecognizer:tapGesture];
     
     // release gestures
     [panGesture release];
     [swipeLeftGesture release];
     [swipeRightGesture release];
     [doubleTapGesture release];
+    [tapGesture release];
     
+    // Initialize parameters
 	viewerMode = ViewerModePageView;
     currentPageIndex = 0;
     
-    // init pictures
+
+    
+    // Init pictures
     if ( [pictures count] > 0 ) {
         
         previousImage = NULL;
@@ -212,6 +227,22 @@
 
 #pragma mark - Gesture handler
 
+- (void)toggleToolbars:(UITapGestureRecognizer*)sender
+{
+
+    // Hide bars
+    if (![[self.navigationController navigationBar] isHidden])
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    else
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    if (self.navigationController.toolbarHidden)
+        [self.navigationController setToolbarHidden:NO animated:YES];
+    else
+        [self.navigationController setToolbarHidden:YES animated:YES];
+
+}
+
 - (void)toggleMode:(UITapGestureRecognizer *)sender
 {
 	if (viewerMode == ViewerModePageView) {
@@ -254,7 +285,7 @@
     [self loadImage];
 	
     if ([sender direction] == 1) {
-        // swipe right
+        // swipe right, pictures move right
         
         if (previousImage == NULL) {
             return;
@@ -287,7 +318,7 @@
         }
     }
     else {        
-        // swipe left
+        // swipe left, pictures move left
 
         if (nextImage == NULL) {
             return;
@@ -367,14 +398,15 @@
 	[currentImage handleRotate:NO];
 	[nextImage handleRotate:NO];
 }
-/*
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-*/
+
 - (void)viewDidUnload
 {
+    [self setControlBar:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -391,6 +423,15 @@
 	[previousImage handleRotate:YES];
 	[currentImage handleRotate:YES];
 	[nextImage handleRotate:YES];
+}
+
+#pragma mark - NavigationController Delegate
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (viewController != self) {
+        [self.navigationController setToolbarHidden:YES animated:YES];
+    }
 }
 
 @end

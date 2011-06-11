@@ -60,6 +60,11 @@
 	NSLog(@"TableView Width: %g, Height: %g", self.tableView.frame.size.width, self.tableView.frame.size.height);
     picturesViewer = [[PicturesViewerViewController alloc] initWithFrame:self.tableView.frame];
     
+    // Initialize Toolbars
+    [self.navigationController.toolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [self.navigationController setToolbarHidden:NO animated:NO];
+    [self.navigationController setDelegate:picturesViewer];
+    
     [self.navigationController pushViewController:picturesViewer animated:YES];
 }
 
