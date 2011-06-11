@@ -17,7 +17,6 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-//@property (nonatomic, retain) IBOutlet ComicViewerViewController *viewController;
-@property (nonatomic, retain) IBOutlet PicturesViewerViewController *viewController;
+@property (nonatomic, retain) IBOutlet UINavigationController *viewController;
 
 @end

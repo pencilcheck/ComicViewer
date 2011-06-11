@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ComicViewerViewController : UIViewController {
-    
+@class PicturesViewerViewController;
+
+@interface ComicViewerViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSMutableArray* comics;
+    PicturesViewerViewController* picturesViewer;
 }
 
 @end
