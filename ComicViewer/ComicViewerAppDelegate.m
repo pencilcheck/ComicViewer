@@ -9,6 +9,7 @@
 #import "ComicViewerAppDelegate.h"
 
 #import "ComicViewerViewController.h"
+#import "PicturesViewerViewController.h"
 
 @implementation ComicViewerAppDelegate
 
