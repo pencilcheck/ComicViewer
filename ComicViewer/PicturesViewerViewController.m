@@ -25,12 +25,22 @@
 	self.view.frame = frame;
 	
 	// datasource
-    
+    pictures = [[NSMutableArray alloc] init];    
+    for (int i = 0; i < 3; ++i) {
+        MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i+1]]];
+        NSMutableArray* panels = [[NSMutableArray alloc] init];
+        
+        [panels addObject:[NSValue valueWithCGRect:CGRectMake(23, 116, 485, 269)]];
+        
+        [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];
+    }
+    /*
     NSArray* array = [[NSArray alloc] initWithObjects:
                       [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"1.jpg"]], 
                       [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"2.jpg"]], 
                       [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"3.jpg"]], nil];
-    pictures = [[NSMutableArray alloc] initWithArray:array];
+    pictures = [[NSMutableArray alloc] initWithObjects:[[NSMutableDictionary alloc] initWithObjectsAndKeys:, nil], nil];
+    */
     
     // init gestures
     panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panPicture:)];
@@ -54,14 +64,16 @@
     [doubleTapGesture release];
     
 	viewerMode = ViewerModePageView;
+    currentPageIndex = 0;
+    
     // init pictures
     if ( [pictures count] > 0 ) {
+        
         previousImage = NULL;
-        currentImage = [pictures objectAtIndex:0];
-        nextImage = [pictures objectAtIndex:1];
-        [self setupUI];
+        currentImage = [[pictures objectAtIndex:currentPageIndex] objectAtIndex:0];
+        nextImage = [[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:0];
+        [self positionUI];
     }
-	
 	
     return self;
 }
@@ -79,51 +91,146 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (MyScrollView*)loadPanel:(MyScrollView*)scrollView withPanelRect:(CGRect)panelInfo
+{
+    CGImageRef ref = CGImageCreateWithImageInRect(scrollView.imageView.image.CGImage, panelInfo);
+    UIImage *image = [UIImage imageWithCGImage:ref];
+
+    [scrollView removeFromSuperview];
+    scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:image];
+    return scrollView;
+}
+
 - (void)loadImage
 {
-   
-    if (previousImage == NULL) {
-        int previousIndex = [pictures indexOfObject:currentImage]-1;
-        if (previousIndex >= 0) {
-            previousImage = [pictures objectAtIndex:previousIndex];
+	if (viewerMode == ViewerModePageView) {
+        if (comingFromDifferentMode) {
+
+            int previousIndex = currentPageIndex-1;
+            if (previousIndex >= 0) {
+                [previousImage removeFromSuperview];
+                previousImage = [[pictures objectAtIndex:previousIndex] objectAtIndex:0];
+            }
+
+            int currentIndex = currentPageIndex;
+            if (currentIndex >= 0 && currentIndex < [pictures count]) {
+                [currentImage removeFromSuperview];
+                currentImage = [[pictures objectAtIndex:currentIndex] objectAtIndex:0];
+            }
+
+            int nextIndex = currentPageIndex+1;
+            if (nextIndex < [pictures count]) {
+                [nextImage removeFromSuperview];
+                nextImage = [[pictures objectAtIndex:nextIndex] objectAtIndex:0];
+            }
+
+            
+            comingFromDifferentMode = false;
+        }
+        else {
+            if (previousImage == NULL) {
+                int previousIndex = currentPageIndex-1;
+                if (previousIndex >= 0) {
+                    [previousImage removeFromSuperview];                    
+                    previousImage = [[pictures objectAtIndex:previousIndex] objectAtIndex:0];
+                }
+            }
+            if (nextImage == NULL) {
+                int nextIndex = currentPageIndex+1;
+                if (nextIndex < [pictures count]) {
+                    [nextImage removeFromSuperview];
+                    nextImage = [[pictures objectAtIndex:nextIndex] objectAtIndex:0];
+                    
+                }
+            }
         }
     }
-    if (nextImage == NULL) {
-        int nextIndex = [pictures indexOfObject:currentImage]+1;
-        if (nextIndex < [pictures count]) {
-            nextImage = [pictures objectAtIndex:nextIndex];
-
+	else if (viewerMode == ViewerModePanelView) {
+        if (comingFromDifferentMode) {
+            
+            int previousIndex = currentPanelIndex-1;
+            if (previousIndex >= 0) {
+                previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:previousIndex] CGRectValue]];
+            }
+            else {
+                // Previous page
+                if (currentPageIndex > 0) {
+                    previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]-1] CGRectValue]];
+                }
+            }
+            
+            int currentIndex = currentPanelIndex;
+            if (currentIndex >= 0 && currentIndex < [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]) {
+                currentImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:currentIndex] CGRectValue]];                    
+            }
+            
+            int nextIndex = currentPanelIndex+1;
+            if (nextIndex < [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]) {
+                nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:nextIndex] CGRectValue]];                    
+            }
+            else {
+                // Next page
+                if (currentPageIndex < [pictures count]-1) {
+                    nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];                    
+                }
+            }
+            
+            comingFromDifferentMode = false;
         }
+        else {
+            if (previousImage == NULL) {
+                int previousIndex = currentPanelIndex-1;
+                if (previousIndex >= 0) {
+                    previousImage = [self loadPanel:[[pictures objectAtIndex:previousIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:previousIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];
+                }
+                else {
+                    // Previous page
+                    if (currentPageIndex > 0) {
+                        previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]-1] CGRectValue]];
+                    }
+                }
+            }
+            if (nextImage == NULL) {
+                int nextIndex = currentPanelIndex+1;
+                if (nextIndex < [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]) {
+                    nextImage = [self loadPanel:[[pictures objectAtIndex:nextIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:nextIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];                    
+                }
+                else {
+                    // Next page
+                    if (currentPageIndex < [pictures count]-1) {
+                        nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];       
+                    }
+                }
+            }
+        }        
     }
     
-    [self setupUI];
+
+    
+    [self positionUI];
 }
 
 #pragma mark - Gesture handler
 
 - (void)toggleMode:(UITapGestureRecognizer *)sender
 {
-	static MyScrollView *tempMyScrollView = nil;
-	CGRect firstPanel = CGRectMake(23, 116, 485, 269);
-
 	if (viewerMode == ViewerModePageView) {
 		CGPoint tapPointInImage = [sender locationInView:currentImage.imageView];
-		if (CGRectContainsPoint(firstPanel, tapPointInImage)) {
-			viewerMode = ViewerModePanelView;
-			tempMyScrollView = currentImage;
-			CGImageRef ref = CGImageCreateWithImageInRect(currentImage.imageView.image.CGImage, firstPanel);
-			UIImage *image = [UIImage imageWithCGImage:ref];
-			NSLog (@"iW: %g  iH: %g", image.size.width, image.size.height);
-			[currentImage removeFromSuperview];
-			currentImage = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:image];
-			[self setupUI];
-		}
+        for (NSValue* rectValue in [[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex]) {
+            if (CGRectContainsPoint([rectValue CGRectValue], tapPointInImage)) {
+                viewerMode = ViewerModePanelView;
+                comingFromDifferentMode = true;
+                
+                [self loadImage];
+                break;
+            }   
+        }
 	}
 	else if (viewerMode == ViewerModePanelView) {
 		viewerMode = ViewerModePageView;
-		[currentImage removeFromSuperview];
-		currentImage = tempMyScrollView;
-		[self setupUI];
+        comingFromDifferentMode = true;
+
+        [self loadImage];
 	}
 }
 
@@ -168,6 +275,16 @@
             previousImage = NULL;
 			
         }];
+        
+        if (viewerMode == ViewerModePageView)
+            currentPageIndex--;
+        else if (viewerMode == ViewerModePanelView) {
+            currentPanelIndex--;
+            if (currentPanelIndex < 0) {
+                currentPageIndex--;
+                currentPanelIndex = [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]-1;
+            }
+        }
     }
     else {        
         // swipe left
@@ -190,13 +307,23 @@
             currentImage = nextImage;
             nextImage = NULL;
         }];
+        
+        if (viewerMode == ViewerModePageView)
+            currentPageIndex++;
+        else if (viewerMode == ViewerModePanelView) {
+            currentPanelIndex++;
+            if (currentPanelIndex > [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]-1) {
+                currentPageIndex++;
+                currentPanelIndex = 0;
+            }
+        }
     }
 
 }
 
 #pragma mark - View lifecycle
 
-- (void)setupUI
+- (void)positionUI
 {
     // initialize the background of the view to the background of the image
 
@@ -240,12 +367,12 @@
 	[currentImage handleRotate:NO];
 	[nextImage handleRotate:NO];
 }
-
+/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-
+*/
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -260,7 +387,7 @@
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-	[self setupUI];
+	[self positionUI];
 	[previousImage handleRotate:YES];
 	[currentImage handleRotate:YES];
 	[nextImage handleRotate:YES];

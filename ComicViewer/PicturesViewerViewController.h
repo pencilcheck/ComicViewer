@@ -15,6 +15,10 @@ typedef enum {
 	ViewerModePanelView
 } ViewerMode;
 
+typedef enum {
+    scrollViewIndex,
+    panelRectsIndex
+} getPair;
 
 @interface PicturesViewerViewController : UIViewController {
     // datasource
@@ -31,6 +35,13 @@ typedef enum {
     MyScrollView* previousImage;
     MyScrollView* currentImage;
     MyScrollView* nextImage;
+    
+    // Index
+    int currentPageIndex;
+    int currentPanelIndex;
+    
+    // Mode switching flag
+    BOOL comingFromDifferentMode;
 
 	// State Variable
 	ViewerMode viewerMode;
