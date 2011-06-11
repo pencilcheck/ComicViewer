@@ -16,11 +16,11 @@
 
 
 //CGRectMake(0, 0, [self.view bounds].size.width, [self.view bounds].size.height)
-- (id)initWithFrame:(CGRect)frame withImageName:(NSString*)imageName {
+- (id)initWithFrame:(CGRect)frame withImage:(UIImage *)image {
     
     self = [super initWithFrame:frame];
     if (self) {
-		imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+		imageView = [[UIImageView alloc] initWithImage:image];
 		[self setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
 		[self setContentSize:imageView.image.size];
 		self.delegate = self;
@@ -28,7 +28,9 @@
 		
 		self.minimumZoomScale = 0.1;
 		self.maximumZoomScale = 10.0;
-		CGFloat fitScreenScale = (self.frame.size.height / imageView.image.size.height);
+		CGFloat fitWidthScale =  (self.frame.size.width / imageView.image.size.width);
+		CGFloat fitHeightScale =  (self.frame.size.height / imageView.image.size.height);
+		CGFloat fitScreenScale = MIN(fitWidthScale, fitHeightScale);
 		[self setZoomScale:fitScreenScale];
 		self.minimumZoomScale = fitScreenScale;
 		self.maximumZoomScale = fitScreenScale;
@@ -44,7 +46,9 @@
 	[self setContentSize:imageView.image.size];
 	self.minimumZoomScale = 0.1;
 	self.maximumZoomScale = 10.0;
-	CGFloat fitScreenScale = (self.frame.size.height / imageView.image.size.height);
+	CGFloat fitWidthScale =  (self.frame.size.width / imageView.image.size.width);
+	CGFloat fitHeightScale =  (self.frame.size.height / imageView.image.size.height);
+	CGFloat fitScreenScale = MIN(fitWidthScale, fitHeightScale);
 	[self setZoomScale:fitScreenScale animated:animation];
 	self.minimumZoomScale = fitScreenScale;
 	self.maximumZoomScale = fitScreenScale;

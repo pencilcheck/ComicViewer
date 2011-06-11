@@ -3,5 +3,7 @@ Team 9 MangaFlow ReadMe:
 1. Bookshelf (ComicViewViewController)
 2. Disappearing Navigation bar and info (bottom) bar
 3. Page view to panel view transition
+   - Double clicking on the first panel of first page can toggle between the two modes.
+   - TODO: Modify loadImage() to prepare image data (both page and panel) dynamically and toggleMode() to check whether user tapped inside a panel and toggle viewerMode and then call loadImage().
 4. The bread and butter of our app, the auto segmentation of the comic page to panels
 5. Two tiers architectures in PictureViewController (Top to manage mode and image sources to low tier, and low tier just need to display the 3 images and the animation)

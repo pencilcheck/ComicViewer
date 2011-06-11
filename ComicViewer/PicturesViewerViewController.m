@@ -27,9 +27,9 @@
 	// datasource
     
     NSArray* array = [[NSArray alloc] initWithObjects:
-                      [[MyScrollView alloc] initWithFrame:self.view.frame withImageName:@"1.jpg"], 
-                      [[MyScrollView alloc] initWithFrame:self.view.frame withImageName:@"2.jpg"], 
-                      [[MyScrollView alloc] initWithFrame:self.view.frame withImageName:@"3.jpg"], nil];
+                      [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"1.jpg"]], 
+                      [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"2.jpg"]], 
+                      [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:@"3.jpg"]], nil];
     pictures = [[NSMutableArray alloc] initWithArray:array];
     
     // init gestures
@@ -103,18 +103,27 @@
 
 - (void)toggleMode:(UITapGestureRecognizer *)sender
 {
-//	NSArray* array = [[NSArray alloc] initWithObjects:
-//                      [[NSArray alloc] initWithObjects:<#(id)firstObj#>:[UIImage imageNamed:@"1.jpg"]], 
-//                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]], 
-//                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3.jpg"]], nil];
-//    pictures = [[NSMutableArray alloc] initWithArray:array];
-	
+	static MyScrollView *tempMyScrollView = nil;
+	CGRect firstPanel = CGRectMake(23, 116, 485, 269);
+
 	if (viewerMode == ViewerModePageView) {
 		CGPoint tapPointInImage = [sender locationInView:currentImage.imageView];
-		NSLog (@"X: %g  Y: %g", tapPointInImage.x, tapPointInImage.y);
+		if (CGRectContainsPoint(firstPanel, tapPointInImage)) {
+			viewerMode = ViewerModePanelView;
+			tempMyScrollView = currentImage;
+			CGImageRef ref = CGImageCreateWithImageInRect(currentImage.imageView.image.CGImage, firstPanel);
+			UIImage *image = [UIImage imageWithCGImage:ref];
+			NSLog (@"iW: %g  iH: %g", image.size.width, image.size.height);
+			[currentImage removeFromSuperview];
+			currentImage = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:image];
+			[self setupUI];
+		}
 	}
-	if (viewerMode == ViewerModePanelView) {
-		
+	else if (viewerMode == ViewerModePanelView) {
+		viewerMode = ViewerModePageView;
+		[currentImage removeFromSuperview];
+		currentImage = tempMyScrollView;
+		[self setupUI];
 	}
 }
 
@@ -235,8 +244,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-
 }
 
 - (void)viewDidUnload

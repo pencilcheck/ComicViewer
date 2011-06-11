@@ -15,7 +15,7 @@
 
 @property (nonatomic, retain) UIImageView* imageView;
 
-- (id) initWithFrame:(CGRect)frame withImageName:(NSString*) imageName;
+- (id)initWithFrame:(CGRect)frame withImage:(UIImage *)image;
 - (void)handleRotate:(BOOL)animation;
 
 @end
