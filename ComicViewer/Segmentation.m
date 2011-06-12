@@ -58,7 +58,7 @@
         }
         //NSLog(@"whitepixel at line %d is %d",h,whitePixel);
         
-        if (whitePixel>500) {
+        if (whitePixel > (width * 99 / 100)) {
             if ((h-lastCutHeight)>200) {
                 [panelArray addObject:[NSValue valueWithCGRect:CGRectMake(0, lastCutHeight, width, h-lastCutHeight)]];
                 NSLog(@"%d",h);
