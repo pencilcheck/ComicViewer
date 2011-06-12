@@ -258,6 +258,10 @@
                 viewerMode = ViewerModePanelView;
                 comingFromDifferentMode = true;
 				currentPanelIndex = [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] indexOfObject:rectValue];
+				[previousImage removeFromSuperview];
+				previousImage = nil;
+				[nextImage removeFromSuperview];
+				nextImage = nil;
                 
                 [self loadImage];
                 break;
