@@ -7,7 +7,7 @@
 //
 
 #import "PicturesViewerViewController.h"
-
+#import "Segmentation.h"
 
 @implementation PicturesViewerViewController
 
@@ -27,15 +27,24 @@
 	// datasource
     pictures = [[NSMutableArray alloc] init];    
     for (int i = 0; i < 3; ++i) {
-        MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i+1]]];
+        MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
         NSMutableArray* panels = [[NSMutableArray alloc] init];
+        cutter= [[Segmentation alloc] init];
         
-        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 116, 490, 275)]];
-        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 411, 490, 277)]];
-        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 712, 490, 274)]];
-        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 1009, 490, 274)]];
+        [cutter panel:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
+
+        [panels addObjectsFromArray:cutter.panelArray];
         
+        NSLog(@"%@",cutter.panelArray);
+
+//        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 116, 490, 275)]];
+//        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 411, 490, 277)]];
+//        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 712, 490, 274)]];
+//        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 1009, 490, 274)]];
+//        
         [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];
+        
+        [cutter release];
     }
     
     /* older implementation

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07733DDE13A4A02A00D687E2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07733DDB13A4A02A00D687E2 /* 1.png */; };
+		07733DDF13A4A02A00D687E2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07733DDC13A4A02A00D687E2 /* 2.png */; };
+		07733DE013A4A02A00D687E2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07733DDD13A4A02A00D687E2 /* 3.png */; };
+		07C84D4B13A49D0200AC141D /* Segmentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C84D4A13A49D0200AC141D /* Segmentation.m */; };
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		3D1490BA1377E4F400A8FE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1490B91377E4F400A8FE68 /* UIKit.framework */; };
 		3D1490BC1377E4F400A8FE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1490BB1377E4F400A8FE68 /* Foundation.framework */; };
@@ -17,15 +21,17 @@
 		3D1490CD1377E4F400A8FE68 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490CB1377E4F400A8FE68 /* MainWindow.xib */; };
 		3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */; };
 		3D1490D31377E4F400A8FE68 /* ComicViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */; };
-		3D1491DC1377E71100A8FE68 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D1491D91377E71100A8FE68 /* 1.jpg */; };
-		3D1491DD1377E71100A8FE68 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D1491DA1377E71100A8FE68 /* 2.jpg */; };
-		3D1491DE1377E71100A8FE68 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D1491DB1377E71100A8FE68 /* 3.jpg */; };
 		3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */; };
 		3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */; };
 		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07733DDB13A4A02A00D687E2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = "../../Mobile HCI/ImageProcessing/ImageProcessing/1.png"; sourceTree = "<group>"; };
+		07733DDC13A4A02A00D687E2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = "../../Mobile HCI/ImageProcessing/ImageProcessing/2.png"; sourceTree = "<group>"; };
+		07733DDD13A4A02A00D687E2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = "../../Mobile HCI/ImageProcessing/ImageProcessing/3.png"; sourceTree = "<group>"; };
+		07C84D4913A49D0200AC141D /* Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segmentation.h; sourceTree = "<group>"; };
+		07C84D4A13A49D0200AC141D /* Segmentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Segmentation.m; sourceTree = "<group>"; };
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3D1490B51377E4F400A8FE68 /* ComicViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1490B91377E4F400A8FE68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -41,9 +47,6 @@
 		3D1490CE1377E4F400A8FE68 /* ComicViewerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicViewerViewController.h; sourceTree = "<group>"; };
 		3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicViewerViewController.m; sourceTree = "<group>"; };
 		3D1490D21377E4F400A8FE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ComicViewerViewController.xib; sourceTree = "<group>"; };
-		3D1491D91377E71100A8FE68 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		3D1491DA1377E71100A8FE68 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		3D1491DB1377E71100A8FE68 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		3D4A89A61377F968006366A8 /* PicturesViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicturesViewerViewController.h; sourceTree = "<group>"; };
 		3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicturesViewerViewController.m; sourceTree = "<group>"; };
 		3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesViewerViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */,
 				3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */,
 				3D4A89A61377F968006366A8 /* PicturesViewerViewController.h */,
+				07C84D4913A49D0200AC141D /* Segmentation.h */,
+				07C84D4A13A49D0200AC141D /* Segmentation.m */,
 				3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */,
 				3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */,
 				3D1490D91377E5EA00A8FE68 /* Resource */,
@@ -136,9 +141,9 @@
 		3D1490DA1377E6C000A8FE68 /* examples */ = {
 			isa = PBXGroup;
 			children = (
-				3D1491D91377E71100A8FE68 /* 1.jpg */,
-				3D1491DA1377E71100A8FE68 /* 2.jpg */,
-				3D1491DB1377E71100A8FE68 /* 3.jpg */,
+				07733DDB13A4A02A00D687E2 /* 1.png */,
+				07733DDC13A4A02A00D687E2 /* 2.png */,
+				07733DDD13A4A02A00D687E2 /* 3.png */,
 			);
 			name = examples;
 			sourceTree = "<group>";
@@ -193,10 +198,10 @@
 				3D1490C41377E4F400A8FE68 /* InfoPlist.strings in Resources */,
 				3D1490CD1377E4F400A8FE68 /* MainWindow.xib in Resources */,
 				3D1490D31377E4F400A8FE68 /* ComicViewerViewController.xib in Resources */,
-				3D1491DC1377E71100A8FE68 /* 1.jpg in Resources */,
-				3D1491DD1377E71100A8FE68 /* 2.jpg in Resources */,
-				3D1491DE1377E71100A8FE68 /* 3.jpg in Resources */,
 				3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */,
+				07733DDE13A4A02A00D687E2 /* 1.png in Resources */,
+				07733DDF13A4A02A00D687E2 /* 2.png in Resources */,
+				07733DE013A4A02A00D687E2 /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +217,7 @@
 				3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */,
 				3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */,
 				42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */,
+				07C84D4B13A49D0200AC141D /* Segmentation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
