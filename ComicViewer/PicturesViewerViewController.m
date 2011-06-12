@@ -200,24 +200,24 @@
             if (previousImage == NULL) {
                 int previousIndex = currentPanelIndex-1;
                 if (previousIndex >= 0) {
-                    previousImage = [self loadPanel:[[pictures objectAtIndex:previousIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:previousIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];
+                    previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:previousIndex] CGRectValue]];
                 }
                 else {
                     // Previous page
                     if (currentPageIndex > 0) {
-                        previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]-1] CGRectValue]];
+                        previousImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:panelRectsIndex] objectAtIndex:[[[pictures objectAtIndex:currentPageIndex-1] objectAtIndex:panelRectsIndex] count]-1] CGRectValue]];
                     }
                 }
             }
             if (nextImage == NULL) {
                 int nextIndex = currentPanelIndex+1;
                 if (nextIndex < [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] count]) {
-                    nextImage = [self loadPanel:[[pictures objectAtIndex:nextIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:nextIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];                    
+                    nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:nextIndex] CGRectValue]];                    
                 }
                 else {
                     // Next page
                     if (currentPageIndex < [pictures count]-1) {
-                        nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];       
+                        nextImage = [self loadPanel:[[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:scrollViewIndex] withPanelRect:[[[[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:panelRectsIndex] objectAtIndex:0] CGRectValue]];       
                     }
                 }
             }
