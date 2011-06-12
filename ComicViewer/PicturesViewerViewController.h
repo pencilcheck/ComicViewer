@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #include "MyScrollView.h"
+#import "Segmentation.h"
 
 
 typedef enum {
@@ -46,6 +47,9 @@ typedef enum {
 
 	// State Variable
 	ViewerMode viewerMode;
+    
+    //cutter
+    Segmentation* cutter;
 }
 
 @end
