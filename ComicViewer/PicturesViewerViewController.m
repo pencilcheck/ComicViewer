@@ -30,7 +30,10 @@
         MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i+1]]];
         NSMutableArray* panels = [[NSMutableArray alloc] init];
         
-        [panels addObject:[NSValue valueWithCGRect:CGRectMake(23, 116, 485, 269)]];
+        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 116, 490, 275)]];
+        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 411, 490, 277)]];
+        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 712, 490, 274)]];
+        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 1009, 490, 274)]];
         
         [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];
     }
@@ -78,6 +81,7 @@
     // Initialize parameters
 	viewerMode = ViewerModePageView;
     currentPageIndex = 0;
+	
     
 
     
@@ -229,6 +233,8 @@
 
 - (void)toggleToolbars:(UITapGestureRecognizer*)sender
 {
+	CGPoint tapPointInImage = [sender locationInView:currentImage.imageView];
+	NSLog (@"X: %g  Y: %g", tapPointInImage.x, tapPointInImage.y);
 
     // Hide bars
     if (![[self.navigationController navigationBar] isHidden])
@@ -251,6 +257,7 @@
             if (CGRectContainsPoint([rectValue CGRectValue], tapPointInImage)) {
                 viewerMode = ViewerModePanelView;
                 comingFromDifferentMode = true;
+				currentPanelIndex = [[[pictures objectAtIndex:currentPageIndex] objectAtIndex:panelRectsIndex] indexOfObject:rectValue];
                 
                 [self loadImage];
                 break;
