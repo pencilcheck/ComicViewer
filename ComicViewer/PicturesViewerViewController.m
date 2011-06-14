@@ -26,26 +26,24 @@
 	
 	// datasource
     pictures = [[NSMutableArray alloc] init];    
+    cutter= [[Segmentation alloc] init];
     for (int i = 0; i < 3; ++i) {
         MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
         NSMutableArray* panels = [[NSMutableArray alloc] init];
-        cutter= [[Segmentation alloc] init];
+
         
         [cutter panel:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
 
         [panels addObjectsFromArray:cutter.panelArray];
-        
-        NSLog(@"%@",cutter.panelArray);
 
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 116, 490, 275)]];
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 411, 490, 277)]];
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 712, 490, 274)]];
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 1009, 490, 274)]];
-//        
-        [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];
-        
-        [cutter release];
+
+        [pictures addObject:[NSArray arrayWithObjects:scrollView, panels, nil]];        
     }
+    [cutter release];
     
     /* older implementation
     NSArray* array = [[NSArray alloc] initWithObjects:
@@ -91,12 +89,8 @@
 	viewerMode = ViewerModePageView;
     currentPageIndex = 0;
 	
-    
-
-    
     // Init pictures
     if ( [pictures count] > 0 ) {
-        
         previousImage = NULL;
         currentImage = [[pictures objectAtIndex:currentPageIndex] objectAtIndex:0];
         nextImage = [[pictures objectAtIndex:currentPageIndex+1] objectAtIndex:0];
@@ -108,6 +102,11 @@
 
 - (void)dealloc
 {
+    [previousImage release];
+    [currentImage release];
+    [nextImage release];
+    [pictures release];
+    [cutter release];
     [super dealloc];
 }
 
@@ -426,7 +425,11 @@
 
 - (void)viewDidUnload
 {
-    [self setControlBar:nil];
+    previousImage = nil;
+    currentImage = nil;
+    nextImage = nil;
+    pictures = nil;
+    cutter = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

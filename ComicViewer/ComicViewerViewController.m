@@ -35,8 +35,8 @@
     if (cell == nil) 
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"comic"];
     
-    cell.textLabel.text = @"TEST";
-    cell.detailTextLabel.text = @"The greatest comic ever drawn.";
+    cell.textLabel.text = @"Link's Logbook, The Legend of Zelda The Wind Waker";
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Part%d", indexPath.row+1];
     
     cell.imageView.image = [[comics objectAtIndex:[indexPath row]] image];
     
@@ -81,9 +81,9 @@
     self.tableView.backgroundColor = [UIColor clearColor];
 
     NSArray* array = [[NSArray alloc] initWithObjects:
-                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1.jpg"]], 
-                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]], 
-                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3.jpg"]], nil];
+                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"1.png"]], 
+                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.png"]], 
+                      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3.png"]], nil];
     comics = [[NSMutableArray alloc] initWithArray:array];
     
 }

@@ -52,4 +52,6 @@ typedef enum {
     Segmentation* cutter;
 }
 
+- (void)positionUI;
+
 @end
