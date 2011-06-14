@@ -69,11 +69,13 @@
 	//NSMutableArray* 
 	corners = [[NSMutableArray alloc] init];
 	
-	// these are LOWER LEFT corners
+	// these are corners & size
 	int vertiCount = 0;
+	int leftbond;
 	
 	for (int strp=0; strp<horizontaCount; strp++) {
 		int upbond,lowbond;
+		leftbond = 0;
 		if(strp==0){
 			upbond = 0;
 			lowbond = [[horr objectAtIndex:0] getY];
@@ -99,20 +101,24 @@
 				//NSLog(@"found %d",h);
 				vertiCount++;
 				cord* newcord = [[cord alloc] init];
-				[newcord setXY:w :lowbond];
+				[newcord setXY:leftbond :upbond];
+				[newcord setHW:lowbond-upbond :w-leftbond];
+				//CGRect newcord = CGRectMake(leftbond, upbond, w-leftbond, lowbond-upbond);
 				[corners addObject:newcord];
 				[newcord release];
+				leftbond = w-leftbond;
 				found = YES;
 			}
 			
 		}
 	}
 	
+	 //Use [[corners objectAtIndex:~] makeRect] to create rect
+	
 	NSLog(@"h = %d",horizontaCount);
 	NSLog(@"w = %d",vertiCount);
 	NSLog(@"%d",[corners count]);
 }
-
 @end
 
 
@@ -120,11 +126,25 @@
 
 @synthesize x;
 @synthesize y;
+@synthesize h;
+@synthesize w;
 
 -(void) setXY :(int) n_x : (int) n_y {
 	x = n_x;
 	y = n_y;
 }
+
+-(void) setHW :(int) n_h : (int) n_w {
+	h = n_h;
+	w = n_w;
+}
+
+-(CGRect) makeRect {
+	CGRect rec = CGRectMake(x, y, w, h);
+	NSLog(@"x = %d y = %d h = %d w = %d",x,y,h,w);
+	return rec;
+}
+
 -(int)  getY{
 	return y;
 }
