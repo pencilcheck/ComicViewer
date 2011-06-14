@@ -24,6 +24,7 @@
 		3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */; };
 		3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */; };
 		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
+		63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D6F5D313A7820E00E4A829 /* panelcut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesViewerViewController.xib; sourceTree = "<group>"; };
 		42FE837B13A3542C0067CED1 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
 		42FE837C13A3542C0067CED1 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		63D6F5D213A7820E00E4A829 /* panelcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panelcut.h; sourceTree = "<group>"; };
+		63D6F5D313A7820E00E4A829 /* panelcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panelcut.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				3D1490BF1377E4F400A8FE68 /* ComicViewer */,
 				3D1490B81377E4F400A8FE68 /* Frameworks */,
 				3D1490B61377E4F400A8FE68 /* Products */,
+				63D6F5D213A7820E00E4A829 /* panelcut.h */,
+				63D6F5D313A7820E00E4A829 /* panelcut.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +223,7 @@
 				3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */,
 				42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */,
 				07C84D4B13A49D0200AC141D /* Segmentation.m in Sources */,
+				63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
