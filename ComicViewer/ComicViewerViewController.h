@@ -25,6 +25,7 @@
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *loadingView;
 
 - (void) loadPictureViewer;
+- (void) startSpinner;
 - (void) removeSpinner;
 
 @end

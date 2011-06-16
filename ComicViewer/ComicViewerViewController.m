@@ -62,6 +62,11 @@
 
 #pragma mark - GridView Delegate
 
+- (void) startSpinner
+{
+    [loadingView startAnimating];
+}
+
 - (void) removeSpinner
 {
     [loadingView stopAnimating];
@@ -69,17 +74,7 @@
 
 - (void) loadPictureViewer
 {
-    picturesViewer = [[PicturesViewerViewController alloc] initWithFrame:self.view.frame];
     
-    // Initialize Toolbars
-    [self.navigationController.toolbar setBarStyle:UIBarStyleBlackTranslucent];
-    [self.navigationController setToolbarHidden:NO animated:NO];
-    [self.navigationController setDelegate:picturesViewer];
-    
-    [self performSelectorOnMainThread:@selector(removeSpinner) withObject:nil waitUntilDone:NO];
-    
-    [self.navigationController pushViewController:picturesViewer animated:YES];
-    [picturesViewer release];
 }
 
 - (void) gridView: (AQGridView *) gridView didSelectItemAtIndex: (NSUInteger) index;
@@ -87,13 +82,23 @@
     // Create a new PicturesViewController and push it
     
     //TODO: need to pass the index of the comic or the array
-	
-	NSLog(@"TableView Width: %g, Height: %g", self.view.frame.size.width, self.view.frame.size.height);
     
     // Turn on Activity Indicator View
-    [loadingView startAnimating];
+    [self performSelectorInBackground:@selector(startSpinner) withObject:nil];
 
-    [self performSelectorInBackground:@selector(loadPictureViewer) withObject:nil];
+    //[self performSelectorOnMainThread:@selector(loadPictureViewer) withObject:nil waitUntilDone:NO];
+    
+    picturesViewer = [[PicturesViewerViewController alloc] initWithFrame:self.view.frame];
+    
+    // Initialize Toolbars
+    [self.navigationController.toolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [self.navigationController setToolbarHidden:NO animated:NO];
+    [self.navigationController setDelegate:picturesViewer];
+    
+    [loadingView stopAnimating];
+    
+    [self.navigationController pushViewController:picturesViewer animated:YES];
+    [picturesViewer release];
 }
 
 - (CGSize) portraitGridCellSizeForGridView: (AQGridView *) gridView;
