@@ -25,14 +25,7 @@ typedef enum {
 @interface PicturesViewerViewController : UIViewController <UINavigationControllerDelegate> {
     // datasource
     NSMutableArray* pictures;
-    
-    // gesture recognizers
-    UIPanGestureRecognizer* panGesture;
-    UISwipeGestureRecognizer* swipeLeftGesture;
-    UISwipeGestureRecognizer* swipeRightGesture;
-    UIRotationGestureRecognizer* rotateGesture;
-    UITapGestureRecognizer* doubleTapGesture;
-    UITapGestureRecognizer* tapGesture;
+    NSMutableArray* panels;
     
     // UI
     MyScrollView* previousImage;
@@ -48,12 +41,11 @@ typedef enum {
 
 	// State Variable
 	ViewerMode viewerMode;
-    
-    //cutter
-    //Segmentation* cutter;
-	panelcut* cutter;
 }
 
 - (void)positionUI;
+//- (MyScrollView*)loadPanel:(MyScrollView*)scrollView withPanelRect:(CGRect)panelInfo;
+- (MyScrollView*)loadPanel:(CGImageRef)cgimage withPanelRect:(CGRect)panelInfo;
+- (MyScrollView*)loadPanelView:(MyScrollView*)scrollView withPanelIndex:(int)panelIndex ofPageIndex:(int)pageIndex;
 
 @end

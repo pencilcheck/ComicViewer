@@ -8,11 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AQGridView.h"
+
 @class PicturesViewerViewController;
 
-@interface ComicViewerViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface ComicViewerViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource> {
     NSMutableArray* comics;
+    
     PicturesViewerViewController* picturesViewer;
+    
+    AQGridView *gridView;
+    UIActivityIndicatorView *loadingView;
 }
+
+@property (nonatomic, retain) IBOutlet AQGridView *gridView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *loadingView;
+
+- (void) loadPictureViewer;
+- (void) removeSpinner;
 
 @end

@@ -42,7 +42,7 @@
 }
 
 - (void)handleRotate:(BOOL)animation {
-	NSLog (@"self: %@", self);
+	//NSLog (@"self: %@", self);
 	[self setContentSize:imageView.image.size];
 	self.minimumZoomScale = 0.1;
 	self.maximumZoomScale = 10.0;
@@ -52,7 +52,7 @@
 	[self setZoomScale:fitScreenScale animated:animation];
 	self.minimumZoomScale = fitScreenScale;
 	self.maximumZoomScale = fitScreenScale;
-	NSLog (@"iCenter: %g, %g  sCenter: %g, %g", imageView.center.x, imageView.center.y, self.center.x, self.center.y);
+	//NSLog (@"iCenter: %g, %g  sCenter: %g, %g", imageView.center.x, imageView.center.y, self.center.x, self.center.y);
 	imageView.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
 }
 

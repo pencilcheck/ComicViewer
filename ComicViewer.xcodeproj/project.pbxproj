@@ -23,11 +23,65 @@
 		3D3C0CF113A4A645009F75AF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C0CEF13A4A645009F75AF /* 3.png */; };
 		3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */; };
 		3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */; };
+		3D74D9BD13AA61FE001CF80A /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92013AA61FE001CF80A /* AQGridView.m */; };
+		3D74D9BE13AA61FE001CF80A /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92213AA61FE001CF80A /* AQGridViewAnimatorItem.m */; };
+		3D74D9BF13AA61FE001CF80A /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92513AA61FE001CF80A /* AQGridViewCell.m */; };
+		3D74D9C013AA61FE001CF80A /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92713AA61FE001CF80A /* AQGridViewController.m */; };
+		3D74D9C113AA61FE001CF80A /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92913AA61FE001CF80A /* AQGridViewData.m */; };
+		3D74D9C213AA61FE001CF80A /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92B13AA61FE001CF80A /* AQGridViewUpdateInfo.m */; };
+		3D74D9C313AA61FE001CF80A /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92D13AA61FE001CF80A /* AQGridViewUpdateItem.m */; };
+		3D74D9C413AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D92F13AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		3D74D9C513AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D93113AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m */; };
+		3D74D9C613AA61FE001CF80A /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74D93313AA61FE001CF80A /* UIColor+AQGridView.m */; };
+		3D74D9FC13AA61FE001CF80A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D98D13AA61FE001CF80A /* LICENSE */; };
+		3D74D9FD13AA61FE001CF80A /* README.textile in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D98E13AA61FE001CF80A /* README.textile */; };
+		3D74D9FE13AA61FE001CF80A /* AQGridSelection.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99013AA61FE001CF80A /* AQGridSelection.png */; };
+		3D74D9FF13AA61FE001CF80A /* AQGridSelectionGray.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99113AA61FE001CF80A /* AQGridSelectionGray.png */; };
+		3D74DA0013AA61FE001CF80A /* AQGridSelectionGrayBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99213AA61FE001CF80A /* AQGridSelectionGrayBlue.png */; };
+		3D74DA0113AA61FE001CF80A /* AQGridSelectionGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99313AA61FE001CF80A /* AQGridSelectionGreen.png */; };
+		3D74DA0213AA61FE001CF80A /* AQGridSelectionRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99413AA61FE001CF80A /* AQGridSelectionRed.png */; };
+		3D74DA0313AA61FE001CF80A /* embed_png.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3D74D99613AA61FE001CF80A /* embed_png.sh */; };
+		3D74DA1413AA638B001CF80A /* ComicCoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DA1313AA638B001CF80A /* ComicCoverCell.m */; };
+		3D74DA1613AA6479001CF80A /* BoxOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D74DA1513AA6479001CF80A /* BoxOverlay.png */; };
+		3DACA1A213AA6EB400966E7D /* cover1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DACA1A113AA6EB400966E7D /* cover1.png */; };
+		3DACA1A513AA6ECD00966E7D /* cover2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DACA1A313AA6ECD00966E7D /* cover2.png */; };
+		3DACA1A613AA6ECD00966E7D /* cover3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DACA1A413AA6ECD00966E7D /* cover3.png */; };
 		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
 		63A7A1A013A9C6E20058B906 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A19F13A9C6E20058B906 /* icon.png */; };
 		63A7A1A213A9C87F0058B906 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A1A113A9C87F0058B906 /* default.png */; };
 		63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D6F5D313A7820E00E4A829 /* panelcut.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D74DA0513AA61FF001CF80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D74D91813AA61FE001CF80A /* AQGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = AQGridView;
+		};
+		3D74DA0813AA61FF001CF80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D74D94913AA61FE001CF80A /* ExpanderDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38D6F06912197E62006909B6;
+			remoteInfo = ExpanderDemo;
+		};
+		3D74DA0B13AA61FF001CF80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D74D95C13AA61FE001CF80A /* ImageDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = ImageDemo;
+		};
+		3D74DA0E13AA61FF001CF80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D74D98913AA61FE001CF80A /* SpringBoard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = SpringBoard;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		07C84D4913A49D0200AC141D /* Segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segmentation.h; sourceTree = "<group>"; };
@@ -53,6 +107,140 @@
 		3D4A89A61377F968006366A8 /* PicturesViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicturesViewerViewController.h; sourceTree = "<group>"; };
 		3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicturesViewerViewController.m; sourceTree = "<group>"; };
 		3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesViewerViewController.xib; sourceTree = "<group>"; };
+		3D74D8F413AA61FD001CF80A /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
+		3D74D8F513AA61FD001CF80A /* description */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description; sourceTree = "<group>"; };
+		3D74D8F613AA61FD001CF80A /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
+		3D74D8F813AA61FE001CF80A /* applypatch-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "applypatch-msg.sample"; sourceTree = "<group>"; };
+		3D74D8F913AA61FE001CF80A /* commit-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "commit-msg.sample"; sourceTree = "<group>"; };
+		3D74D8FA13AA61FE001CF80A /* post-commit.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-commit.sample"; sourceTree = "<group>"; };
+		3D74D8FB13AA61FE001CF80A /* post-receive.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-receive.sample"; sourceTree = "<group>"; };
+		3D74D8FC13AA61FE001CF80A /* post-update.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "post-update.sample"; sourceTree = "<group>"; };
+		3D74D8FD13AA61FE001CF80A /* pre-applypatch.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-applypatch.sample"; sourceTree = "<group>"; };
+		3D74D8FE13AA61FE001CF80A /* pre-commit.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-commit.sample"; sourceTree = "<group>"; };
+		3D74D8FF13AA61FE001CF80A /* pre-rebase.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pre-rebase.sample"; sourceTree = "<group>"; };
+		3D74D90013AA61FE001CF80A /* prepare-commit-msg.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-commit-msg.sample"; sourceTree = "<group>"; };
+		3D74D90113AA61FE001CF80A /* update.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sample; sourceTree = "<group>"; };
+		3D74D90213AA61FE001CF80A /* index */ = {isa = PBXFileReference; lastKnownFileType = file; path = index; sourceTree = "<group>"; };
+		3D74D90413AA61FE001CF80A /* exclude */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exclude; sourceTree = "<group>"; };
+		3D74D90613AA61FE001CF80A /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
+		3D74D90913AA61FE001CF80A /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master; sourceTree = "<group>"; };
+		3D74D90D13AA61FE001CF80A /* pack-b9fd851ba5900569f0730da422742dcccb963b8b.idx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pack-b9fd851ba5900569f0730da422742dcccb963b8b.idx"; sourceTree = "<group>"; };
+		3D74D90E13AA61FE001CF80A /* pack-b9fd851ba5900569f0730da422742dcccb963b8b.pack */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pack-b9fd851ba5900569f0730da422742dcccb963b8b.pack"; sourceTree = "<group>"; };
+		3D74D90F13AA61FE001CF80A /* packed-refs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "packed-refs"; sourceTree = "<group>"; };
+		3D74D91213AA61FE001CF80A /* master */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master; sourceTree = "<group>"; };
+		3D74D91513AA61FE001CF80A /* HEAD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HEAD; sourceTree = "<group>"; };
+		3D74D91713AA61FE001CF80A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D74D91813AA61FE001CF80A /* AQGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AQGridView.xcodeproj; sourceTree = "<group>"; };
+		3D74D91B13AA61FE001CF80A /* AQGridView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView_Prefix.pch; sourceTree = "<group>"; };
+		3D74D91D13AA61FE001CF80A /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		3D74D91E13AA61FE001CF80A /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		3D74D91F13AA61FE001CF80A /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		3D74D92013AA61FE001CF80A /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		3D74D92113AA61FE001CF80A /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		3D74D92213AA61FE001CF80A /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		3D74D92313AA61FE001CF80A /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		3D74D92413AA61FE001CF80A /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		3D74D92513AA61FE001CF80A /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		3D74D92613AA61FE001CF80A /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		3D74D92713AA61FE001CF80A /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		3D74D92813AA61FE001CF80A /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		3D74D92913AA61FE001CF80A /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		3D74D92A13AA61FE001CF80A /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		3D74D92B13AA61FE001CF80A /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		3D74D92C13AA61FE001CF80A /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		3D74D92D13AA61FE001CF80A /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		3D74D92E13AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		3D74D92F13AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		3D74D93013AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		3D74D93113AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		3D74D93213AA61FE001CF80A /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		3D74D93313AA61FE001CF80A /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		3D74D93613AA61FE001CF80A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D74D93813AA61FE001CF80A /* ExpanderDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderDemoAppDelegate.h; sourceTree = "<group>"; };
+		3D74D93913AA61FE001CF80A /* ExpanderDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanderDemoAppDelegate.m; sourceTree = "<group>"; };
+		3D74D93A13AA61FE001CF80A /* ExpanderDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderDemoViewController.h; sourceTree = "<group>"; };
+		3D74D93B13AA61FE001CF80A /* ExpanderDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpanderDemoViewController.m; sourceTree = "<group>"; };
+		3D74D93C13AA61FE001CF80A /* ExpandFromGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandFromGridViewCell.h; sourceTree = "<group>"; };
+		3D74D93D13AA61FE001CF80A /* ExpandFromGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandFromGridViewCell.m; sourceTree = "<group>"; };
+		3D74D93E13AA61FE001CF80A /* ExpandingGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingGridViewController.h; sourceTree = "<group>"; };
+		3D74D93F13AA61FE001CF80A /* ExpandingGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingGridViewController.m; sourceTree = "<group>"; };
+		3D74D94013AA61FE001CF80A /* ImageGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGridViewCell.h; sourceTree = "<group>"; };
+		3D74D94113AA61FE001CF80A /* ImageGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridViewCell.m; sourceTree = "<group>"; };
+		3D74D94313AA61FE001CF80A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ExpanderDemoViewController.xib; sourceTree = "<group>"; };
+		3D74D94513AA61FE001CF80A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D74D94713AA61FE001CF80A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3D74D94813AA61FE001CF80A /* ExpanderDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExpanderDemo-Info.plist"; sourceTree = "<group>"; };
+		3D74D94913AA61FE001CF80A /* ExpanderDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ExpanderDemo.xcodeproj; sourceTree = "<group>"; };
+		3D74D94C13AA61FE001CF80A /* ExpanderDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpanderDemo_Prefix.pch; sourceTree = "<group>"; };
+		3D74D94D13AA61FE001CF80A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D74D94F13AA61FE001CF80A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D74D95113AA61FE001CF80A /* ImageDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoAppDelegate.h; sourceTree = "<group>"; };
+		3D74D95213AA61FE001CF80A /* ImageDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoAppDelegate.m; sourceTree = "<group>"; };
+		3D74D95313AA61FE001CF80A /* ImageDemoCellChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoCellChooser.h; sourceTree = "<group>"; };
+		3D74D95413AA61FE001CF80A /* ImageDemoCellChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoCellChooser.m; sourceTree = "<group>"; };
+		3D74D95513AA61FE001CF80A /* ImageDemoFilledCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoFilledCell.h; sourceTree = "<group>"; };
+		3D74D95613AA61FE001CF80A /* ImageDemoFilledCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoFilledCell.m; sourceTree = "<group>"; };
+		3D74D95713AA61FE001CF80A /* ImageDemoGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoGridViewCell.h; sourceTree = "<group>"; };
+		3D74D95813AA61FE001CF80A /* ImageDemoGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoGridViewCell.m; sourceTree = "<group>"; };
+		3D74D95913AA61FE001CF80A /* ImageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoViewController.h; sourceTree = "<group>"; };
+		3D74D95A13AA61FE001CF80A /* ImageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoViewController.m; sourceTree = "<group>"; };
+		3D74D95B13AA61FE001CF80A /* ImageDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ImageDemo-Info.plist"; sourceTree = "<group>"; };
+		3D74D95C13AA61FE001CF80A /* ImageDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ImageDemo.xcodeproj; sourceTree = "<group>"; };
+		3D74D95F13AA61FE001CF80A /* ImageDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemo_Prefix.pch; sourceTree = "<group>"; };
+		3D74D96013AA61FE001CF80A /* ImageDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageDemoViewController.xib; sourceTree = "<group>"; };
+		3D74D96213AA61FE001CF80A /* 3D-simplicity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3D-simplicity.png"; sourceTree = "<group>"; };
+		3D74D96313AA61FE001CF80A /* AppleTV-esque_by-mikelcroft_nl-1440.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppleTV-esque_by-mikelcroft_nl-1440.png"; sourceTree = "<group>"; };
+		3D74D96413AA61FE001CF80A /* batman_surfing_on_superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman_surfing_on_superman.png; sourceTree = "<group>"; };
+		3D74D96513AA61FE001CF80A /* coffee-break_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-break_.png"; sourceTree = "<group>"; };
+		3D74D96613AA61FE001CF80A /* colorful_1440x900.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorful_1440x900.png; sourceTree = "<group>"; };
+		3D74D96713AA61FE001CF80A /* Composition53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Composition53.png; sourceTree = "<group>"; };
+		3D74D96813AA61FE001CF80A /* Dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon.png; sourceTree = "<group>"; };
+		3D74D96913AA61FE001CF80A /* eclipse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eclipse.png; sourceTree = "<group>"; };
+		3D74D96A13AA61FE001CF80A /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
+		3D74D96B13AA61FE001CF80A /* focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus.png; sourceTree = "<group>"; };
+		3D74D96C13AA61FE001CF80A /* gbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbo.png; sourceTree = "<group>"; };
+		3D74D96D13AA61FE001CF80A /* Green_Plant_(2560x1600).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green_Plant_(2560x1600).png"; sourceTree = "<group>"; };
+		3D74D96E13AA61FE001CF80A /* grounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grounded.png; sourceTree = "<group>"; };
+		3D74D96F13AA61FE001CF80A /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		3D74D97013AA61FE001CF80A /* LeatherHoles-Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeatherHoles-Apple.png"; sourceTree = "<group>"; };
+		3D74D97113AA61FE001CF80A /* Let_it_snow_by_mj_coffeeholick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Let_it_snow_by_mj_coffeeholick.png; sourceTree = "<group>"; };
+		3D74D97213AA61FE001CF80A /* Luxury_Apple_by_Stratification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Luxury_Apple_by_Stratification.png; sourceTree = "<group>"; };
+		3D74D97313AA61FE001CF80A /* MacMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacMini.png; sourceTree = "<group>"; };
+		3D74D97413AA61FE001CF80A /* SlaveKingGod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlaveKingGod.png; sourceTree = "<group>"; };
+		3D74D97513AA61FE001CF80A /* Snow_Leopard_by_vladstudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snow_Leopard_by_vladstudio.png; sourceTree = "<group>"; };
+		3D74D97613AA61FE001CF80A /* Space Fold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Space Fold.png"; sourceTree = "<group>"; };
+		3D74D97713AA61FE001CF80A /* Stormcloud_Schmeisser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stormcloud_Schmeisser.png; sourceTree = "<group>"; };
+		3D74D97813AA61FE001CF80A /* tiamat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiamat.png; sourceTree = "<group>"; };
+		3D74D97913AA61FE001CF80A /* WTF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WTF.png; sourceTree = "<group>"; };
+		3D74D97A13AA61FE001CF80A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D74D97B13AA61FE001CF80A /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		3D74D97D13AA61FE001CF80A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3D74D97E13AA61FE001CF80A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3D74D98013AA61FE001CF80A /* SpringBoardAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardAppDelegate.h; sourceTree = "<group>"; };
+		3D74D98113AA61FE001CF80A /* SpringBoardAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoardAppDelegate.m; sourceTree = "<group>"; };
+		3D74D98213AA61FE001CF80A /* SpringBoardIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardIconCell.h; sourceTree = "<group>"; };
+		3D74D98313AA61FE001CF80A /* SpringBoardIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoardIconCell.m; sourceTree = "<group>"; };
+		3D74D98413AA61FE001CF80A /* SpringBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoardViewController.h; sourceTree = "<group>"; };
+		3D74D98513AA61FE001CF80A /* SpringBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBoardViewController.m; sourceTree = "<group>"; };
+		3D74D98613AA61FE001CF80A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D74D98713AA61FE001CF80A /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		3D74D98813AA61FE001CF80A /* SpringBoard-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SpringBoard-Info.plist"; sourceTree = "<group>"; };
+		3D74D98913AA61FE001CF80A /* SpringBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SpringBoard.xcodeproj; sourceTree = "<group>"; };
+		3D74D98C13AA61FE001CF80A /* SpringBoard_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBoard_Prefix.pch; sourceTree = "<group>"; };
+		3D74D98D13AA61FE001CF80A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3D74D98E13AA61FE001CF80A /* README.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
+		3D74D99013AA61FE001CF80A /* AQGridSelection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AQGridSelection.png; sourceTree = "<group>"; };
+		3D74D99113AA61FE001CF80A /* AQGridSelectionGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AQGridSelectionGray.png; sourceTree = "<group>"; };
+		3D74D99213AA61FE001CF80A /* AQGridSelectionGrayBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AQGridSelectionGrayBlue.png; sourceTree = "<group>"; };
+		3D74D99313AA61FE001CF80A /* AQGridSelectionGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AQGridSelectionGreen.png; sourceTree = "<group>"; };
+		3D74D99413AA61FE001CF80A /* AQGridSelectionRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AQGridSelectionRed.png; sourceTree = "<group>"; };
+		3D74D99613AA61FE001CF80A /* embed_png.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = embed_png.sh; sourceTree = "<group>"; };
+		3D74DA1213AA638B001CF80A /* ComicCoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicCoverCell.h; sourceTree = "<group>"; };
+		3D74DA1313AA638B001CF80A /* ComicCoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicCoverCell.m; sourceTree = "<group>"; };
+		3D74DA1513AA6479001CF80A /* BoxOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOverlay.png; sourceTree = "<group>"; };
+		3DACA1A113AA6EB400966E7D /* cover1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover1.png; sourceTree = "<group>"; };
+		3DACA1A313AA6ECD00966E7D /* cover2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover2.png; sourceTree = "<group>"; };
+		3DACA1A413AA6ECD00966E7D /* cover3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover3.png; sourceTree = "<group>"; };
 		42FE837B13A3542C0067CED1 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
 		42FE837C13A3542C0067CED1 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 		63A7A19F13A9C6E20058B906 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -79,6 +267,7 @@
 		3D1490AA1377E4F300A8FE68 = {
 			isa = PBXGroup;
 			children = (
+				3D74D8F213AA61FD001CF80A /* AQGridView */,
 				3D1490BF1377E4F400A8FE68 /* ComicViewer */,
 				3D1490B81377E4F400A8FE68 /* Frameworks */,
 				3D1490B61377E4F400A8FE68 /* Products */,
@@ -117,6 +306,8 @@
 				3D1490CE1377E4F400A8FE68 /* ComicViewerViewController.h */,
 				3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */,
 				3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */,
+				3D74DA1213AA638B001CF80A /* ComicCoverCell.h */,
+				3D74DA1313AA638B001CF80A /* ComicCoverCell.m */,
 				3D4A89A61377F968006366A8 /* PicturesViewerViewController.h */,
 				3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */,
 				3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */,
@@ -144,6 +335,7 @@
 		3D1490D91377E5EA00A8FE68 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3D74DA1513AA6479001CF80A /* BoxOverlay.png */,
 				3D1490DA1377E6C000A8FE68 /* examples */,
 			);
 			name = Resource;
@@ -152,11 +344,381 @@
 		3D1490DA1377E6C000A8FE68 /* examples */ = {
 			isa = PBXGroup;
 			children = (
+				3DACA1A313AA6ECD00966E7D /* cover2.png */,
+				3DACA1A413AA6ECD00966E7D /* cover3.png */,
+				3DACA1A113AA6EB400966E7D /* cover1.png */,
 				3D3C0CEE13A4A645009F75AF /* 2.png */,
 				3D3C0CEF13A4A645009F75AF /* 3.png */,
 				3D3C0CEB13A4A638009F75AF /* 1.png */,
 			);
 			name = examples;
+			sourceTree = "<group>";
+		};
+		3D74D8F213AA61FD001CF80A /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D8F313AA61FD001CF80A /* .git */,
+				3D74D91713AA61FE001CF80A /* .gitignore */,
+				3D74D91813AA61FE001CF80A /* AQGridView.xcodeproj */,
+				3D74D91B13AA61FE001CF80A /* AQGridView_Prefix.pch */,
+				3D74D91C13AA61FE001CF80A /* Classes */,
+				3D74D93413AA61FE001CF80A /* Examples */,
+				3D74D98D13AA61FE001CF80A /* LICENSE */,
+				3D74D98E13AA61FE001CF80A /* README.textile */,
+				3D74D98F13AA61FE001CF80A /* Resources */,
+				3D74D99513AA61FE001CF80A /* Scripts */,
+			);
+			path = AQGridView;
+			sourceTree = "<group>";
+		};
+		3D74D8F313AA61FD001CF80A /* .git */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D8F413AA61FD001CF80A /* config */,
+				3D74D8F513AA61FD001CF80A /* description */,
+				3D74D8F613AA61FD001CF80A /* HEAD */,
+				3D74D8F713AA61FD001CF80A /* hooks */,
+				3D74D90213AA61FE001CF80A /* index */,
+				3D74D90313AA61FE001CF80A /* info */,
+				3D74D90513AA61FE001CF80A /* logs */,
+				3D74D90A13AA61FE001CF80A /* objects */,
+				3D74D90F13AA61FE001CF80A /* packed-refs */,
+				3D74D91013AA61FE001CF80A /* refs */,
+			);
+			path = .git;
+			sourceTree = "<group>";
+		};
+		3D74D8F713AA61FD001CF80A /* hooks */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D8F813AA61FE001CF80A /* applypatch-msg.sample */,
+				3D74D8F913AA61FE001CF80A /* commit-msg.sample */,
+				3D74D8FA13AA61FE001CF80A /* post-commit.sample */,
+				3D74D8FB13AA61FE001CF80A /* post-receive.sample */,
+				3D74D8FC13AA61FE001CF80A /* post-update.sample */,
+				3D74D8FD13AA61FE001CF80A /* pre-applypatch.sample */,
+				3D74D8FE13AA61FE001CF80A /* pre-commit.sample */,
+				3D74D8FF13AA61FE001CF80A /* pre-rebase.sample */,
+				3D74D90013AA61FE001CF80A /* prepare-commit-msg.sample */,
+				3D74D90113AA61FE001CF80A /* update.sample */,
+			);
+			path = hooks;
+			sourceTree = "<group>";
+		};
+		3D74D90313AA61FE001CF80A /* info */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90413AA61FE001CF80A /* exclude */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		3D74D90513AA61FE001CF80A /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90613AA61FE001CF80A /* HEAD */,
+				3D74D90713AA61FE001CF80A /* refs */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		3D74D90713AA61FE001CF80A /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90813AA61FE001CF80A /* heads */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		3D74D90813AA61FE001CF80A /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90913AA61FE001CF80A /* master */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		3D74D90A13AA61FE001CF80A /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90B13AA61FE001CF80A /* info */,
+				3D74D90C13AA61FE001CF80A /* pack */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		3D74D90B13AA61FE001CF80A /* info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		3D74D90C13AA61FE001CF80A /* pack */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D90D13AA61FE001CF80A /* pack-b9fd851ba5900569f0730da422742dcccb963b8b.idx */,
+				3D74D90E13AA61FE001CF80A /* pack-b9fd851ba5900569f0730da422742dcccb963b8b.pack */,
+			);
+			path = pack;
+			sourceTree = "<group>";
+		};
+		3D74D91013AA61FE001CF80A /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D91113AA61FE001CF80A /* heads */,
+				3D74D91313AA61FE001CF80A /* remotes */,
+				3D74D91613AA61FE001CF80A /* tags */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		3D74D91113AA61FE001CF80A /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D91213AA61FE001CF80A /* master */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		3D74D91313AA61FE001CF80A /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D91413AA61FE001CF80A /* origin */,
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+		3D74D91413AA61FE001CF80A /* origin */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D91513AA61FE001CF80A /* HEAD */,
+			);
+			path = origin;
+			sourceTree = "<group>";
+		};
+		3D74D91613AA61FE001CF80A /* tags */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tags;
+			sourceTree = "<group>";
+		};
+		3D74D91913AA61FE001CF80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D74DA0613AA61FF001CF80A /* libAQGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D74D91C13AA61FE001CF80A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D91D13AA61FE001CF80A /* AQGridView+CellLayout.h */,
+				3D74D91E13AA61FE001CF80A /* AQGridView+CellLocationDelegation.h */,
+				3D74D91F13AA61FE001CF80A /* AQGridView.h */,
+				3D74D92013AA61FE001CF80A /* AQGridView.m */,
+				3D74D92113AA61FE001CF80A /* AQGridViewAnimatorItem.h */,
+				3D74D92213AA61FE001CF80A /* AQGridViewAnimatorItem.m */,
+				3D74D92313AA61FE001CF80A /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				3D74D92413AA61FE001CF80A /* AQGridViewCell.h */,
+				3D74D92513AA61FE001CF80A /* AQGridViewCell.m */,
+				3D74D92613AA61FE001CF80A /* AQGridViewController.h */,
+				3D74D92713AA61FE001CF80A /* AQGridViewController.m */,
+				3D74D92813AA61FE001CF80A /* AQGridViewData.h */,
+				3D74D92913AA61FE001CF80A /* AQGridViewData.m */,
+				3D74D92A13AA61FE001CF80A /* AQGridViewUpdateInfo.h */,
+				3D74D92B13AA61FE001CF80A /* AQGridViewUpdateInfo.m */,
+				3D74D92C13AA61FE001CF80A /* AQGridViewUpdateItem.h */,
+				3D74D92D13AA61FE001CF80A /* AQGridViewUpdateItem.m */,
+				3D74D92E13AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.h */,
+				3D74D92F13AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.m */,
+				3D74D93013AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.h */,
+				3D74D93113AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m */,
+				3D74D93213AA61FE001CF80A /* UIColor+AQGridView.h */,
+				3D74D93313AA61FE001CF80A /* UIColor+AQGridView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D74D93413AA61FE001CF80A /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D93513AA61FE001CF80A /* ExpanderDemo */,
+				3D74D94E13AA61FE001CF80A /* ImageDemo */,
+				3D74D97C13AA61FE001CF80A /* SpringBoard */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		3D74D93513AA61FE001CF80A /* ExpanderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D93613AA61FE001CF80A /* .gitignore */,
+				3D74D93713AA61FE001CF80A /* Classes */,
+				3D74D94213AA61FE001CF80A /* ExpanderDemoViewController.xib */,
+				3D74D94413AA61FE001CF80A /* InfoPlist.strings */,
+				3D74D94613AA61FE001CF80A /* MainWindow.xib */,
+				3D74D94813AA61FE001CF80A /* ExpanderDemo-Info.plist */,
+				3D74D94913AA61FE001CF80A /* ExpanderDemo.xcodeproj */,
+				3D74D94C13AA61FE001CF80A /* ExpanderDemo_Prefix.pch */,
+				3D74D94D13AA61FE001CF80A /* main.m */,
+			);
+			path = ExpanderDemo;
+			sourceTree = "<group>";
+		};
+		3D74D93713AA61FE001CF80A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D93813AA61FE001CF80A /* ExpanderDemoAppDelegate.h */,
+				3D74D93913AA61FE001CF80A /* ExpanderDemoAppDelegate.m */,
+				3D74D93A13AA61FE001CF80A /* ExpanderDemoViewController.h */,
+				3D74D93B13AA61FE001CF80A /* ExpanderDemoViewController.m */,
+				3D74D93C13AA61FE001CF80A /* ExpandFromGridViewCell.h */,
+				3D74D93D13AA61FE001CF80A /* ExpandFromGridViewCell.m */,
+				3D74D93E13AA61FE001CF80A /* ExpandingGridViewController.h */,
+				3D74D93F13AA61FE001CF80A /* ExpandingGridViewController.m */,
+				3D74D94013AA61FE001CF80A /* ImageGridViewCell.h */,
+				3D74D94113AA61FE001CF80A /* ImageGridViewCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D74D94A13AA61FE001CF80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D74DA0913AA61FF001CF80A /* ExpanderDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D74D94E13AA61FE001CF80A /* ImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D94F13AA61FE001CF80A /* .gitignore */,
+				3D74D95013AA61FE001CF80A /* Classes */,
+				3D74D95B13AA61FE001CF80A /* ImageDemo-Info.plist */,
+				3D74D95C13AA61FE001CF80A /* ImageDemo.xcodeproj */,
+				3D74D95F13AA61FE001CF80A /* ImageDemo_Prefix.pch */,
+				3D74D96013AA61FE001CF80A /* ImageDemoViewController.xib */,
+				3D74D96113AA61FE001CF80A /* Images */,
+				3D74D97A13AA61FE001CF80A /* main.m */,
+				3D74D97B13AA61FE001CF80A /* MainWindow.xib */,
+			);
+			path = ImageDemo;
+			sourceTree = "<group>";
+		};
+		3D74D95013AA61FE001CF80A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D95113AA61FE001CF80A /* ImageDemoAppDelegate.h */,
+				3D74D95213AA61FE001CF80A /* ImageDemoAppDelegate.m */,
+				3D74D95313AA61FE001CF80A /* ImageDemoCellChooser.h */,
+				3D74D95413AA61FE001CF80A /* ImageDemoCellChooser.m */,
+				3D74D95513AA61FE001CF80A /* ImageDemoFilledCell.h */,
+				3D74D95613AA61FE001CF80A /* ImageDemoFilledCell.m */,
+				3D74D95713AA61FE001CF80A /* ImageDemoGridViewCell.h */,
+				3D74D95813AA61FE001CF80A /* ImageDemoGridViewCell.m */,
+				3D74D95913AA61FE001CF80A /* ImageDemoViewController.h */,
+				3D74D95A13AA61FE001CF80A /* ImageDemoViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D74D95D13AA61FE001CF80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D74DA0C13AA61FF001CF80A /* ImageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D74D96113AA61FE001CF80A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D96213AA61FE001CF80A /* 3D-simplicity.png */,
+				3D74D96313AA61FE001CF80A /* AppleTV-esque_by-mikelcroft_nl-1440.png */,
+				3D74D96413AA61FE001CF80A /* batman_surfing_on_superman.png */,
+				3D74D96513AA61FE001CF80A /* coffee-break_.png */,
+				3D74D96613AA61FE001CF80A /* colorful_1440x900.png */,
+				3D74D96713AA61FE001CF80A /* Composition53.png */,
+				3D74D96813AA61FE001CF80A /* Dragon.png */,
+				3D74D96913AA61FE001CF80A /* eclipse.png */,
+				3D74D96A13AA61FE001CF80A /* face.png */,
+				3D74D96B13AA61FE001CF80A /* focus.png */,
+				3D74D96C13AA61FE001CF80A /* gbo.png */,
+				3D74D96D13AA61FE001CF80A /* Green_Plant_(2560x1600).png */,
+				3D74D96E13AA61FE001CF80A /* grounded.png */,
+				3D74D96F13AA61FE001CF80A /* happy.png */,
+				3D74D97013AA61FE001CF80A /* LeatherHoles-Apple.png */,
+				3D74D97113AA61FE001CF80A /* Let_it_snow_by_mj_coffeeholick.png */,
+				3D74D97213AA61FE001CF80A /* Luxury_Apple_by_Stratification.png */,
+				3D74D97313AA61FE001CF80A /* MacMini.png */,
+				3D74D97413AA61FE001CF80A /* SlaveKingGod.png */,
+				3D74D97513AA61FE001CF80A /* Snow_Leopard_by_vladstudio.png */,
+				3D74D97613AA61FE001CF80A /* Space Fold.png */,
+				3D74D97713AA61FE001CF80A /* Stormcloud_Schmeisser.png */,
+				3D74D97813AA61FE001CF80A /* tiamat.png */,
+				3D74D97913AA61FE001CF80A /* WTF.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3D74D97C13AA61FE001CF80A /* SpringBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D97D13AA61FE001CF80A /* .gitignore */,
+				3D74D97E13AA61FE001CF80A /* background.png */,
+				3D74D97F13AA61FE001CF80A /* Classes */,
+				3D74D98613AA61FE001CF80A /* main.m */,
+				3D74D98713AA61FE001CF80A /* MainWindow.xib */,
+				3D74D98813AA61FE001CF80A /* SpringBoard-Info.plist */,
+				3D74D98913AA61FE001CF80A /* SpringBoard.xcodeproj */,
+				3D74D98C13AA61FE001CF80A /* SpringBoard_Prefix.pch */,
+			);
+			path = SpringBoard;
+			sourceTree = "<group>";
+		};
+		3D74D97F13AA61FE001CF80A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D98013AA61FE001CF80A /* SpringBoardAppDelegate.h */,
+				3D74D98113AA61FE001CF80A /* SpringBoardAppDelegate.m */,
+				3D74D98213AA61FE001CF80A /* SpringBoardIconCell.h */,
+				3D74D98313AA61FE001CF80A /* SpringBoardIconCell.m */,
+				3D74D98413AA61FE001CF80A /* SpringBoardViewController.h */,
+				3D74D98513AA61FE001CF80A /* SpringBoardViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3D74D98A13AA61FE001CF80A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D74DA0F13AA61FF001CF80A /* SpringBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D74D98F13AA61FE001CF80A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D99013AA61FE001CF80A /* AQGridSelection.png */,
+				3D74D99113AA61FE001CF80A /* AQGridSelectionGray.png */,
+				3D74D99213AA61FE001CF80A /* AQGridSelectionGrayBlue.png */,
+				3D74D99313AA61FE001CF80A /* AQGridSelectionGreen.png */,
+				3D74D99413AA61FE001CF80A /* AQGridSelectionRed.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D74D99513AA61FE001CF80A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3D74D99613AA61FE001CF80A /* embed_png.sh */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,12 +756,61 @@
 			mainGroup = 3D1490AA1377E4F300A8FE68;
 			productRefGroup = 3D1490B61377E4F400A8FE68 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D74D91913AA61FE001CF80A /* Products */;
+					ProjectRef = 3D74D91813AA61FE001CF80A /* AQGridView.xcodeproj */;
+				},
+				{
+					ProductGroup = 3D74D94A13AA61FE001CF80A /* Products */;
+					ProjectRef = 3D74D94913AA61FE001CF80A /* ExpanderDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 3D74D95D13AA61FE001CF80A /* Products */;
+					ProjectRef = 3D74D95C13AA61FE001CF80A /* ImageDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = 3D74D98A13AA61FE001CF80A /* Products */;
+					ProjectRef = 3D74D98913AA61FE001CF80A /* SpringBoard.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3D1490B41377E4F400A8FE68 /* ComicViewer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D74DA0613AA61FF001CF80A /* libAQGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAQGridView.a;
+			remoteRef = 3D74DA0513AA61FF001CF80A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D74DA0913AA61FF001CF80A /* ExpanderDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ExpanderDemo.app;
+			remoteRef = 3D74DA0813AA61FF001CF80A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D74DA0C13AA61FF001CF80A /* ImageDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ImageDemo.app;
+			remoteRef = 3D74DA0B13AA61FF001CF80A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D74DA0F13AA61FF001CF80A /* SpringBoard.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SpringBoard.app;
+			remoteRef = 3D74DA0E13AA61FF001CF80A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3D1490B31377E4F400A8FE68 /* Resources */ = {
@@ -215,6 +826,18 @@
 				3D3C0CF113A4A645009F75AF /* 3.png in Resources */,
 				63A7A1A013A9C6E20058B906 /* icon.png in Resources */,
 				63A7A1A213A9C87F0058B906 /* default.png in Resources */,
+				3D74D9FC13AA61FE001CF80A /* LICENSE in Resources */,
+				3D74D9FD13AA61FE001CF80A /* README.textile in Resources */,
+				3D74D9FE13AA61FE001CF80A /* AQGridSelection.png in Resources */,
+				3D74D9FF13AA61FE001CF80A /* AQGridSelectionGray.png in Resources */,
+				3D74DA0013AA61FE001CF80A /* AQGridSelectionGrayBlue.png in Resources */,
+				3D74DA0113AA61FE001CF80A /* AQGridSelectionGreen.png in Resources */,
+				3D74DA0213AA61FE001CF80A /* AQGridSelectionRed.png in Resources */,
+				3D74DA0313AA61FE001CF80A /* embed_png.sh in Resources */,
+				3D74DA1613AA6479001CF80A /* BoxOverlay.png in Resources */,
+				3DACA1A213AA6EB400966E7D /* cover1.png in Resources */,
+				3DACA1A513AA6ECD00966E7D /* cover2.png in Resources */,
+				3DACA1A613AA6ECD00966E7D /* cover3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +855,17 @@
 				42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */,
 				07C84D4B13A49D0200AC141D /* Segmentation.m in Sources */,
 				63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */,
+				3D74D9BD13AA61FE001CF80A /* AQGridView.m in Sources */,
+				3D74D9BE13AA61FE001CF80A /* AQGridViewAnimatorItem.m in Sources */,
+				3D74D9BF13AA61FE001CF80A /* AQGridViewCell.m in Sources */,
+				3D74D9C013AA61FE001CF80A /* AQGridViewController.m in Sources */,
+				3D74D9C113AA61FE001CF80A /* AQGridViewData.m in Sources */,
+				3D74D9C213AA61FE001CF80A /* AQGridViewUpdateInfo.m in Sources */,
+				3D74D9C313AA61FE001CF80A /* AQGridViewUpdateItem.m in Sources */,
+				3D74D9C413AA61FE001CF80A /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				3D74D9C513AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				3D74D9C613AA61FE001CF80A /* UIColor+AQGridView.m in Sources */,
+				3D74DA1413AA638B001CF80A /* ComicCoverCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +896,30 @@
 			name = ComicViewerViewController.xib;
 			sourceTree = "<group>";
 		};
+		3D74D94213AA61FE001CF80A /* ExpanderDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D74D94313AA61FE001CF80A /* en */,
+			);
+			name = ExpanderDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+		3D74D94413AA61FE001CF80A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D74D94513AA61FE001CF80A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D74D94613AA61FE001CF80A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D74D94713AA61FE001CF80A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -274,7 +932,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -294,7 +952,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = 4.2;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -317,6 +975,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComicViewer/ComicViewer-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "ComicViewer/ComicViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,6 +990,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComicViewer/ComicViewer-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "ComicViewer/ComicViewer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

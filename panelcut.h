@@ -18,7 +18,8 @@
 @property (nonatomic,retain) NSMutableArray* corners;
 
 
-- (void) panel:(UIImage*) img;
+//- (void) panel:(UIImage*) img;
+- (void) panel:(CGImageRef) img;
 
 @end
 

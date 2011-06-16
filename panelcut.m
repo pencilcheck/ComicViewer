@@ -13,19 +13,23 @@
 
 @synthesize corners;
 
-- (void) panel:(UIImage*) img{
+//- (void) panel:(UIImage*) img{
+- (void) panel:(CGImageRef) img{
     NSLog(@"panel starts cutting");
-    CGImageRef cgImage = [img CGImage];
+    //CGImageRef cgImage = [img CGImage];
+    CGImageRef cgImage = img;
     int height=CGImageGetHeight(cgImage);
     int width=CGImageGetWidth(cgImage);
     CGDataProviderRef provider = CGImageGetDataProvider(cgImage);
     CFDataRef bitmapData = CGDataProviderCopyData(provider);
     NSData *myData = (NSData *)bitmapData;
     
-    int dataSize=[myData length]/4;
+    //int dataSize=[myData length]/4;
     
-    unsigned int v[dataSize];
-    [myData getBytes:v length:[myData length]];
+    /*unsigned int v[dataSize];
+    [myData getBytes:v length:[myData length]];*/
+    unsigned int *v;
+    v = (unsigned int *)[myData bytes];
 	NSLog(@"w = %d, h = %d",width,height);
 	//    
 	//    NSMutableArray* array= [[NSMutableArray alloc ] init];
@@ -121,6 +125,8 @@
 			
 		}
 	}
+    [horr release];
+    [myData release];
 	
 	 //Use [[corners objectAtIndex:~] makeRect] to create rect
 	
