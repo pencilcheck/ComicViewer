@@ -73,13 +73,13 @@
 	
 	// these are corners & size
 	int vertiCount = 0;
-	int leftbond;
+	int rightbond;
 	int upbond,lowbond;
 	
 	for (int strp=0; strp<horizontaCount; strp++) {
 		
 		NSLog(@"now on strip %d",strp);
-		leftbond = 0;
+		rightbond = width;
 	
 		if(strp==0){
 			upbond = 0;
@@ -95,7 +95,7 @@
 			bool empty = YES;
 			
 			for (int s=upbond; s<lowbond; s++){
-				unsigned int pixel = v[(w+s*width)];
+				unsigned int pixel = v[(width-w-1)+s*width];
 				if(pixel < 4286578688){
 					empty = NO;
 				}
@@ -103,6 +103,8 @@
 			
 			if(!empty){
 				found = NO;
+				if (rightbond==width)
+					rightbond = width-w-1;
 			}
 			if(empty&&!found){
 				NSLog(@"found");
@@ -111,9 +113,9 @@
 				//[newcord setXY:leftbond :upbond];
 				//[newcord setHW:lowbond-upbond :w-leftbond];
 				//CGRect newcord = CGRectMake(leftbond, upbond, w-leftbond, lowbond-upbond);
-				[corners addObject:[NSValue valueWithCGRect:CGRectMake(leftbond, upbond, w-leftbond, lowbond-upbond)]];
+				[corners addObject:[NSValue valueWithCGRect:CGRectMake(width-w-1, upbond, rightbond-(width-w-1), lowbond-upbond)]];
 				//[newcord release];
-				leftbond = w-leftbond;
+				rightbond = width-w-1;
 				found = YES;
 			}
 			

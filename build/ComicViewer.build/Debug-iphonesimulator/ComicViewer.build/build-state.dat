@@ -1,7 +1,7 @@
 TComicViewer
 v7
 r0
-t329894530.502363
+t329903879.427719
 cCheck dependencies
 cProcessInfoPlistFile /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/Info.plist ComicViewer/ComicViewer-Info.plist
 cProcessPCH /var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-fgriqrfsokcvpoezlocwzcmlbpva/ComicViewer-Prefix.pch.gch ComicViewer/ComicViewer-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -263,15 +263,15 @@ t1308199815
 s6356
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/panelcut.o
-t1308200179
-s20664
+t1308211079
+s20708
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app
-t1308201730
+t1308211079
 s408
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app.dSYM
-t1308201330
+t1308211079
 s102
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/1.png
@@ -303,7 +303,7 @@ t1308198924
 s501595
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer
-t1308201330
+t1308211079
 s66512
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/Info.plist
@@ -358,9 +358,9 @@ s591
 i<Foundation/Foundation.h>
 
 N/Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m
-c000000004DF98CF10000000000000D9C
-t1308200177
-s3484
+c000000004DF9B7850000000000000DEC
+t1308211077
+s3564
 i"panelcut.h"
 
 N/var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-drwjflzcbzvlgkfuzhusziupohna/ComicViewer-Prefix.pch.gch
@@ -378,7 +378,7 @@ s1173
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies329894530#329894530#0(0"0(0#1#0"8614028256#0"0#
+lSLF07#2@18"Check dependencies329903879#329903879#0(0"0(0#1#0"8616500000#0"0#
 
 CCompileC build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/ComicViewerAppDelegate.o /Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/ComicViewerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s329892615.649659
@@ -550,8 +550,8 @@ xcom.apple.compilers.llvmgcc42
 lSLF07#2@76"Compile /Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/main.m329625648#329625648#0(0"0(0#0#68"/Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/main.m8603861408#2432"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-generated-files.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-own-target-headers.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-all-target-headers.hmap -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-project-headers.hmap -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/include -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../../three20 -I../../../../../../../Projects/three20/Build/Products/three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources/i386 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources -include /var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-drwjflzcbzvlgkfuzhusziupohna/ComicViewer-Prefix.pch -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/main.m -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/main.o0#
 
 CCompileC build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/panelcut.o /Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s329892978.914140
-e329892979.163516
+s329903879.217369
+e329903879.334560
 r1
 xCompileC
 xbuild/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/panelcut.o
@@ -560,7 +560,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m329892978#329892979#0(0"0(0#0#60"/Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m8612836768#2423"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-generated-files.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-own-target-headers.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-all-target-headers.hmap -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-project-headers.hmap -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/include -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../../three20 -I../../../../../../../Projects/three20/Build/Products/three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources/i386 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources -include /var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-fgriqrfsokcvpoezlocwzcmlbpva/ComicViewer-Prefix.pch -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/panelcut.o0#
+lSLF07#2@68"Compile /Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m329903879#329903879#0(0"0(0#0#60"/Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m8614608256#2423"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-generated-files.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-own-target-headers.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-all-target-headers.hmap -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-project-headers.hmap -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/include -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../../three20 -I../../../../../../../Projects/three20/Build/Products/three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources/i386 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources -include /var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-fgriqrfsokcvpoezlocwzcmlbpva/ComicViewer-Prefix.pch -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/panelcut.m -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/panelcut.o0#
 
 CCompileXIB /Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/PicturesViewerViewController.xib
 s329892617.720316
@@ -692,23 +692,23 @@ CCpResource build/Debug-iphonesimulator/ComicViewer.app/icon2_icon.png ComicView
 r0
 
 CGenerateDSYMFile /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app.dSYM /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer
-s329894130.539495
-e329894130.598854
+s329903879.385046
+e329903879.422368
 r1
 xGenerateDSYMFile
 x/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app.dSYM
 x/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer
-lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/ComicViewer.app.dSYM build/Debug-iphonesimulator/ComicViewer.app/ComicViewer329894130#329894130#0(0"0(0#0#105"/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer8617912864#490"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app.dSYM0#
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/ComicViewer.app.dSYM build/Debug-iphonesimulator/ComicViewer.app/ComicViewer329903879#329903879#0(0"0(0#0#105"/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer8617068160#490"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app.dSYM0#
 
 CLd /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer normal i386
-s329894130.393482
-e329894130.539340
+s329903879.334708
+e329903879.384894
 r1
 xLd
 x/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer
 xnormal
 xi386
-lSLF07#2@110"Link /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer329894130#329894130#0(0"0(0#0#0"8618383680#1074"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -filelist /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/ComicViewer.LinkFileList -mmacosx-version-min=10.6 -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer0#
+lSLF07#2@110"Link /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer329903879#329903879#0(0"0(0#0#0"8613375072#1074"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -filelist /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/Objects-normal/i386/ComicViewer.LinkFileList -mmacosx-version-min=10.6 -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -prebind -o /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/ComicViewer0#
 
 CProcessInfoPlistFile /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app/Info.plist ComicViewer/ComicViewer-Info.plist
 s329894130.029849
@@ -736,10 +736,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Precompile ComicViewer/ComicViewer-Prefix.pch329892614#329892615#0(0"0(0#0#84"/Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/ComicViewer-Prefix.pch8619360032#2304"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-generated-files.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-own-target-headers.hmap -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-all-target-headers.hmap -iquote /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/ComicViewer-project-headers.hmap -F/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/include -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/../../three20 -I../../../../../../../Projects/three20/Build/Products/three20 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources/i386 -I/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/ComicViewer.build/Debug-iphonesimulator/ComicViewer.build/DerivedSources -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/ComicViewer/ComicViewer-Prefix.pch -o /var/folders/z+/z+xhYZP0H6mOadIgQi+T2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComicViewer-Prefix-fgriqrfsokcvpoezlocwzcmlbpva/ComicViewer-Prefix.pch.gch0#
 
 CTouch /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app
-s329894530.498196
-e329894530.502297
+s329903879.423595
+e329903879.427658
 r1
 xTouch
 x/Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app
-lSLF07#2@99"Touch /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app329894530#329894530#0(0"0(0#0#0"8616386176#366"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app0#
+lSLF07#2@99"Touch /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app329903879#329903879#0(0"0(0#0#0"8615270240#366"    cd /Users/vincentlee/Documents/MobileHCI/ComicViewer    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/vincentlee/Documents/MobileHCI/ComicViewer/build/Debug-iphonesimulator/ComicViewer.app0#
 
