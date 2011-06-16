@@ -61,6 +61,7 @@
     picturesViewer = [[PicturesViewerViewController alloc] initWithFrame:self.tableView.frame];
     
     // Initialize Toolbars
+	
     [self.navigationController.toolbar setBarStyle:UIBarStyleBlackTranslucent];
     [self.navigationController setToolbarHidden:NO animated:NO];
     [self.navigationController setDelegate:picturesViewer];
@@ -85,6 +86,7 @@
                       [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.png"]], 
                       [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3.png"]], nil];
     comics = [[NSMutableArray alloc] initWithArray:array];
+	[self setTitle:@"MangaFlow"];
     
 }
 

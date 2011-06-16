@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #include "MyScrollView.h"
 #import "Segmentation.h"
+#import "panelcut.h"
 
 
 typedef enum {
@@ -49,7 +50,8 @@ typedef enum {
 	ViewerMode viewerMode;
     
     //cutter
-    Segmentation* cutter;
+    //Segmentation* cutter;
+	panelcut* cutter;
 }
 
 - (void)positionUI;

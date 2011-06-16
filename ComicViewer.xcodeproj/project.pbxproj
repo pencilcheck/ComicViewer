@@ -24,6 +24,8 @@
 		3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A89A71377F968006366A8 /* PicturesViewerViewController.m */; };
 		3D4A89AA1377F968006366A8 /* PicturesViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */; };
 		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
+		63A7A1A013A9C6E20058B906 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A19F13A9C6E20058B906 /* icon.png */; };
+		63A7A1A213A9C87F0058B906 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A1A113A9C87F0058B906 /* default.png */; };
 		63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D6F5D313A7820E00E4A829 /* panelcut.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicturesViewerViewController.xib; sourceTree = "<group>"; };
 		42FE837B13A3542C0067CED1 /* MyScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
 		42FE837C13A3542C0067CED1 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
+		63A7A19F13A9C6E20058B906 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		63A7A1A113A9C87F0058B906 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		63D6F5D213A7820E00E4A829 /* panelcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panelcut.h; sourceTree = "<group>"; };
 		63D6F5D313A7820E00E4A829 /* panelcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panelcut.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +109,8 @@
 		3D1490BF1377E4F400A8FE68 /* ComicViewer */ = {
 			isa = PBXGroup;
 			children = (
+				63A7A1A113A9C87F0058B906 /* default.png */,
+				63A7A19F13A9C6E20058B906 /* icon.png */,
 				42FE837B13A3542C0067CED1 /* MyScrollView.h */,
 				42FE837C13A3542C0067CED1 /* MyScrollView.m */,
 				3D1490C81377E4F400A8FE68 /* ComicViewerAppDelegate.h */,
@@ -207,6 +213,8 @@
 				3D3C0CEC13A4A638009F75AF /* 1.png in Resources */,
 				3D3C0CF013A4A645009F75AF /* 2.png in Resources */,
 				3D3C0CF113A4A645009F75AF /* 3.png in Resources */,
+				63A7A1A013A9C6E20058B906 /* icon.png in Resources */,
+				63A7A1A213A9C87F0058B906 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,7 @@
     
     unsigned int v[dataSize];
     [myData getBytes:v length:[myData length]];
+	NSLog(@"w = %d, h = %d",width,height);
 	//    
 	//    NSMutableArray* array= [[NSMutableArray alloc ] init];
 	//    
@@ -62,9 +63,10 @@
 			[horr addObject:newcord];
 			[newcord release];
 			found = YES;
+			NSLog(@"found at h = %d",h);
         }
     }
-	
+	NSLog(@"done H cut %d horizontal lines",horizontaCount);
 	
 	//NSMutableArray* 
 	corners = [[NSMutableArray alloc] init];
@@ -72,10 +74,13 @@
 	// these are corners & size
 	int vertiCount = 0;
 	int leftbond;
+	int upbond,lowbond;
 	
 	for (int strp=0; strp<horizontaCount; strp++) {
-		int upbond,lowbond;
+		
+		NSLog(@"now on strip %d",strp);
 		leftbond = 0;
+	
 		if(strp==0){
 			upbond = 0;
 			lowbond = [[horr objectAtIndex:0] getY];
@@ -83,29 +88,31 @@
 			upbond = [[horr objectAtIndex:(strp-1)] getY];
 			lowbond = [[horr objectAtIndex:strp] getY];
 		}
+		NSLog(@"UB = %d, LB = %d",upbond,lowbond);
 		
 		found = YES;
 		for (int w=0; w<width; w++){
 			bool empty = YES;
+			
 			for (int s=upbond; s<lowbond; s++){
-				unsigned int pixel = v[(w+s*height)];
+				unsigned int pixel = v[(w+s*width)];
 				if(pixel < 4286578688){
 					empty = NO;
 				}
 			}
+			
 			if(!empty){
 				found = NO;
-				//NSLog(@"black @ h = %d",h);
 			}
 			if(empty&&!found){
-				//NSLog(@"found %d",h);
+				NSLog(@"found");
 				vertiCount++;
-				cord* newcord = [[cord alloc] init];
-				[newcord setXY:leftbond :upbond];
-				[newcord setHW:lowbond-upbond :w-leftbond];
+				//cord* newcord = [[cord alloc] init];
+				//[newcord setXY:leftbond :upbond];
+				//[newcord setHW:lowbond-upbond :w-leftbond];
 				//CGRect newcord = CGRectMake(leftbond, upbond, w-leftbond, lowbond-upbond);
-				[corners addObject:newcord];
-				[newcord release];
+				[corners addObject:[NSValue valueWithCGRect:CGRectMake(leftbond, upbond, w-leftbond, lowbond-upbond)]];
+				//[newcord release];
 				leftbond = w-leftbond;
 				found = YES;
 			}

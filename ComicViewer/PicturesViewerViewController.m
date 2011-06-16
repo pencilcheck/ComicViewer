@@ -8,6 +8,7 @@
 
 #import "PicturesViewerViewController.h"
 #import "Segmentation.h"
+#import "panelcut.h"
 
 @implementation PicturesViewerViewController
 
@@ -26,7 +27,8 @@
 	
 	// datasource
     pictures = [[NSMutableArray alloc] init];    
-    cutter= [[Segmentation alloc] init];
+    //cutter= [[Segmentation alloc] init];
+	cutter = [[panelcut alloc] init];
     for (int i = 0; i < 3; ++i) {
         MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
         NSMutableArray* panels = [[NSMutableArray alloc] init];
@@ -34,7 +36,7 @@
         
         [cutter panel:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
 
-        [panels addObjectsFromArray:cutter.panelArray];
+        [panels addObjectsFromArray:cutter.corners];
 
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 116, 490, 275)]];
 //        [panels addObject:[NSValue valueWithCGRect:CGRectMake(22, 411, 490, 277)]];
