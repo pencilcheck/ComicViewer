@@ -18,6 +18,9 @@
 		3D1490CD1377E4F400A8FE68 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490CB1377E4F400A8FE68 /* MainWindow.xib */; };
 		3D1490D01377E4F400A8FE68 /* ComicViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */; };
 		3D1490D31377E4F400A8FE68 /* ComicViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1490D11377E4F400A8FE68 /* ComicViewerViewController.xib */; };
+		3D1F68B713AB068A00521404 /* panelcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F68B613AB068A00521404 /* panelcut.m */; };
+		3D1F68B913AB082400521404 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F68B813AB082400521404 /* Default.png */; };
+		3D1F68BD13AB08C100521404 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D1F68BC13AB08C100521404 /* icon.png */; };
 		3D3C0CEC13A4A638009F75AF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C0CEB13A4A638009F75AF /* 1.png */; };
 		3D3C0CF013A4A645009F75AF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C0CEE13A4A645009F75AF /* 2.png */; };
 		3D3C0CF113A4A645009F75AF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D3C0CEF13A4A645009F75AF /* 3.png */; };
@@ -49,7 +52,6 @@
 		42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FE837C13A3542C0067CED1 /* MyScrollView.m */; };
 		63A7A1A013A9C6E20058B906 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A19F13A9C6E20058B906 /* icon.png */; };
 		63A7A1A213A9C87F0058B906 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A7A1A113A9C87F0058B906 /* default.png */; };
-		63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D6F5D313A7820E00E4A829 /* panelcut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,10 @@
 		3D1490CE1377E4F400A8FE68 /* ComicViewerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicViewerViewController.h; sourceTree = "<group>"; };
 		3D1490CF1377E4F400A8FE68 /* ComicViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicViewerViewController.m; sourceTree = "<group>"; };
 		3D1490D21377E4F400A8FE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ComicViewerViewController.xib; sourceTree = "<group>"; };
+		3D1F68B513AB068A00521404 /* panelcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panelcut.h; sourceTree = "<group>"; };
+		3D1F68B613AB068A00521404 /* panelcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panelcut.m; sourceTree = "<group>"; };
+		3D1F68B813AB082400521404 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		3D1F68BC13AB08C100521404 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		3D3C0CEB13A4A638009F75AF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		3D3C0CEE13A4A645009F75AF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		3D3C0CEF13A4A645009F75AF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -245,8 +251,6 @@
 		42FE837C13A3542C0067CED1 /* MyScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 		63A7A19F13A9C6E20058B906 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		63A7A1A113A9C87F0058B906 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
-		63D6F5D213A7820E00E4A829 /* panelcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = panelcut.h; path = ../panelcut.h; sourceTree = "<group>"; };
-		63D6F5D313A7820E00E4A829 /* panelcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = panelcut.m; path = ../panelcut.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,8 +300,8 @@
 		3D1490BF1377E4F400A8FE68 /* ComicViewer */ = {
 			isa = PBXGroup;
 			children = (
-				63A7A1A113A9C87F0058B906 /* default.png */,
-				63A7A19F13A9C6E20058B906 /* icon.png */,
+				3D1F68B513AB068A00521404 /* panelcut.h */,
+				3D1F68B613AB068A00521404 /* panelcut.m */,
 				42FE837B13A3542C0067CED1 /* MyScrollView.h */,
 				42FE837C13A3542C0067CED1 /* MyScrollView.m */,
 				3D1490C81377E4F400A8FE68 /* ComicViewerAppDelegate.h */,
@@ -313,8 +317,6 @@
 				3D4A89A81377F968006366A8 /* PicturesViewerViewController.xib */,
 				07C84D4913A49D0200AC141D /* Segmentation.h */,
 				07C84D4A13A49D0200AC141D /* Segmentation.m */,
-				63D6F5D213A7820E00E4A829 /* panelcut.h */,
-				63D6F5D313A7820E00E4A829 /* panelcut.m */,
 				3D1490D91377E5EA00A8FE68 /* Resource */,
 				3D1490C01377E4F400A8FE68 /* Supporting Files */,
 			);
@@ -335,6 +337,10 @@
 		3D1490D91377E5EA00A8FE68 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3D1F68B813AB082400521404 /* Default.png */,
+				3D1F68BC13AB08C100521404 /* icon.png */,
+				63A7A1A113A9C87F0058B906 /* default.png */,
+				63A7A19F13A9C6E20058B906 /* icon.png */,
 				3D74DA1513AA6479001CF80A /* BoxOverlay.png */,
 				3D1490DA1377E6C000A8FE68 /* examples */,
 			);
@@ -838,6 +844,8 @@
 				3DACA1A213AA6EB400966E7D /* cover1.png in Resources */,
 				3DACA1A513AA6ECD00966E7D /* cover2.png in Resources */,
 				3DACA1A613AA6ECD00966E7D /* cover3.png in Resources */,
+				3D1F68B913AB082400521404 /* Default.png in Resources */,
+				3D1F68BD13AB08C100521404 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,7 +862,6 @@
 				3D4A89A91377F968006366A8 /* PicturesViewerViewController.m in Sources */,
 				42FE837D13A3542C0067CED1 /* MyScrollView.m in Sources */,
 				07C84D4B13A49D0200AC141D /* Segmentation.m in Sources */,
-				63D6F5D413A7820E00E4A829 /* panelcut.m in Sources */,
 				3D74D9BD13AA61FE001CF80A /* AQGridView.m in Sources */,
 				3D74D9BE13AA61FE001CF80A /* AQGridViewAnimatorItem.m in Sources */,
 				3D74D9BF13AA61FE001CF80A /* AQGridViewCell.m in Sources */,
@@ -866,6 +873,7 @@
 				3D74D9C513AA61FE001CF80A /* NSIndexSet+AQIsSetContiguous.m in Sources */,
 				3D74D9C613AA61FE001CF80A /* UIColor+AQGridView.m in Sources */,
 				3D74DA1413AA638B001CF80A /* ComicCoverCell.m in Sources */,
+				3D1F68B713AB068A00521404 /* panelcut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,14 +940,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = "";
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(BUILT_PRODUCTS_DIR)/../three20",
-					"$(BUILT_PRODUCTS_DIR)/../../three20",
-					../../../../../../../Projects/three20/Build/Products/three20,
-				);
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -952,14 +956,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = "";
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(BUILT_PRODUCTS_DIR)/../three20",
-					"$(BUILT_PRODUCTS_DIR)/../../three20",
-					../../../../../../../Projects/three20/Build/Products/three20,
-				);
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
