@@ -34,12 +34,12 @@
 	
     for (int i = 0; i < 10; ++i) {
         NSLog(@"loading %d comic", i);
-        MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
+        MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i+1]]];
         [scrollView setContentMode:UIViewContentModeScaleAspectFit];
         [scrollView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
         
         panelcut* cutter = [[panelcut alloc] init];
-        [cutter panel:[[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]] CGImage]];
+        [cutter panel:[[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", i+1]] CGImage]];
         [cutter release];
         
         NSMutableArray* panelRects = [cutter.corners retain];

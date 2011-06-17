@@ -150,7 +150,7 @@
                       [UIImage imageNamed:@"cover2.png"], 
                       [UIImage imageNamed:@"cover3.png"], nil];*/
     comics = [[NSMutableArray alloc] initWithObjects:
-              [UIImage imageNamed:@"cover1.png"], nil];
+              [UIImage imageNamed:@"cover1.jpg"], nil];
     
     NSLog(@"set title to MangaFlow");
 	[self setTitle:@"MangaFlow"];
