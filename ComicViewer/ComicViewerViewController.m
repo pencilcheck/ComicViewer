@@ -145,10 +145,12 @@
     comics = [[NSMutableArray alloc] initWithArray:array];*/
     
     NSLog(@"init comics");
-    comics = [[NSMutableArray alloc] initWithObjects:
+    /*comics = [[NSMutableArray alloc] initWithObjects:
                       [UIImage imageNamed:@"cover1.png"], 
                       [UIImage imageNamed:@"cover2.png"], 
-                      [UIImage imageNamed:@"cover3.png"], nil];
+                      [UIImage imageNamed:@"cover3.png"], nil];*/
+    comics = [[NSMutableArray alloc] initWithObjects:
+              [UIImage imageNamed:@"cover1.png"], nil];
     
     NSLog(@"set title to MangaFlow");
 	[self setTitle:@"MangaFlow"];

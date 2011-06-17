@@ -31,13 +31,16 @@
     
     //cutter
     //Segmentation* cutter;
-	panelcut* cutter = [[panelcut alloc] init];
-    for (int i = 0; i < 3; ++i) {
+	
+    for (int i = 0; i < 10; ++i) {
+        NSLog(@"loading %d comic", i);
         MyScrollView* scrollView = [[MyScrollView alloc] initWithFrame:self.view.frame withImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]]];
         [scrollView setContentMode:UIViewContentModeScaleAspectFit];
         [scrollView setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
         
+        panelcut* cutter = [[panelcut alloc] init];
         [cutter panel:[[UIImage imageNamed:[NSString stringWithFormat:@"%d.png", i+1]] CGImage]];
+        [cutter release];
         
         NSMutableArray* panelRects = [cutter.corners retain];
         
@@ -53,7 +56,7 @@
         [panelViews release];
         [panelRects release];
     }
-    [cutter release];
+    
     
     // gesture recognizers
     UIPanGestureRecognizer* panGesture;
@@ -321,7 +324,7 @@
             return;
         }
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:0.3 animations:^{
             CGPoint center = currentImage.center;
             center.x += self.view.frame.size.width;
             currentImage.center = center;
@@ -354,7 +357,7 @@
             return;
         }
         
-        [UIView animateWithDuration:0.5 animations:^{
+        [UIView animateWithDuration:0.3 animations:^{
             CGPoint center = currentImage.center;
             center.x -= self.view.frame.size.width;
             currentImage.center = center;
